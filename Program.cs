@@ -1,29 +1,39 @@
 ﻿using LivingStoryEngine.Characters;
 using LivingStoryEngine.NPCs;
+using LivingStoryEngine.Relationshipsystems.NPCs;
+using LivingStoryEngine.Player;
 internal class Program
 {
     private static void Main(string[] args)
     {
-        // Create Eve
+        //npc list
         var eve = Eve.Create();
         var amber = Amber.Create();
         var steve = Steve.Create();
         var jake = Jake.Create();
-
-
-
-
-        int currentDay = 1;
-
-
-
-        List<Character> npcs = new()
+        var player =
+    PlayerFactory.CreatePlayer(
+        "Ryan",
+        "M");
+        // Declare and initialize NPC list before using it
+        List<Character> worldCharacters = new()
 {
+    player,
     eve,
     amber,
     steve,
     jake
 };
+
+
+        foreach (var npc in worldCharacters)
+        {
+            npc.RecoverFromHeartbreak();
+        }
+
+
+        int currentDay = 1;
+
 
 
         List<string> memories = new();
@@ -54,7 +64,7 @@ internal class Program
             Console.WriteLine("7- Exit");
             Console.WriteLine("8- Sleep");
             Console.WriteLine("9- NPCs");
-
+            Console.WriteLine("10 - Show NPC Relationships");
             Console.Write("Choice: ");
 
             string? choice = Console.ReadLine();
@@ -503,29 +513,65 @@ internal class Program
 
 
 
-
                 case "9":
 
+                    Console.Clear();
                     Console.WriteLine();
                     Console.WriteLine("NPCs");
                     Console.WriteLine("----");
-
-                    foreach (var npc in npcs)
+                    foreach (var npc in worldCharacters)
                     {
                         Console.WriteLine($"{npc.Name} - {npc.Location}");
                         Console.WriteLine($"  Mood: {npc.Mood}");
                         Console.WriteLine($"  Love Status: {npc.LoveStatus}");
+                        Console.WriteLine($"  Balance: ${npc.Finances.Balance}");
+                        Console.WriteLine($"  Income: ${npc.Finances.WeeklyIncome}/week");
+                        Console.WriteLine($"  Savings: ${npc.Finances.Savings}");
+                        Console.WriteLine($"  Job Title: {npc.Job.Title}");
                         Console.WriteLine();
                     }
-
-                    break;
-            }
-                   
                     Console.WriteLine();
                     Console.WriteLine("Press any key...");
                     Console.ReadKey();
+                    break;
 
+                case "10":
 
+                    foreach (var npc in worldCharacters)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine(npc.Name);
+                        Console.WriteLine("------------");
+
+                        foreach (var relationship in npc.Relationships)
+                        {
+                            Console.WriteLine($"Target: {relationship.TargetName}");
+                            Console.WriteLine($"Status: {relationship.Status}");
+                            Console.WriteLine($"Love: {relationship.Love}");
+                            Console.WriteLine($"Trust: {relationship.Trust}");
+                            Console.WriteLine($"Respect: {relationship.Respect}");
+                            Console.WriteLine();
+                        }
+                    }
+
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice.");
+                    break;
+            } // end switch
+
+            if (running)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
             }
         }
     }
+}
+
+                    // end while
+                    // end while
+                    // end Main
+                    // end Program

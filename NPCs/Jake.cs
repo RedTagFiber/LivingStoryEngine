@@ -26,6 +26,11 @@ public static class Jake
         jake.Energy = 95;
         jake.Stress = 15;
         jake.Curiosity = 35;
+        jake.LoveInterest = "";
+        jake.Looks = 85;
+        jake.Charisma = 90;
+        jake.Confidence = 85;
+        jake.Maturity = 55;
 
         jake.Traits.Add(new Trait
         {
@@ -54,6 +59,25 @@ public static class Jake
             Description = "Rarely rushes into decisions.",
             Strength = 80
         });
+
+
+        jake.Finances.Balance = 2500;
+        jake.Finances.WeeklyIncome = 1400;
+        jake.Finances.MonthlyBills = 2000;
+        jake.Finances.Savings = 12000;
+        jake.Finances.Debt = 0;
+        jake.Finances.FinancialStress = 10;
+
+        jake.Spending.Food = 150;
+        jake.Spending.Entertainment = 75;
+        jake.Spending.HobbySpending = 400;
+        jake.Spending.SavingsRate = .20m;
+
+        //job
+        jake.Job.Title = "Mechanic";
+        jake.Job.WeeklyIncome = 1400;
+        jake.Job.StressLevel = 25;
+        jake.Job.Workplace = "Auto Repair Shop";
 
         return jake;
     }

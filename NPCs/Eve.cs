@@ -26,7 +26,7 @@ public static class Eve
         eve.Energy = 100;
         eve.Stress = 0;
         eve.Curiosity = 50;
-
+        eve.LoveInterest = "Ryan";
         eve.Traits.Add(new Trait
         {
             Name = "Curious",
@@ -47,6 +47,28 @@ public static class Eve
             Description = "Can become trapped in her own thoughts.",
             Strength = 75
         });
+
+
+
+        //Financial information 
+
+
+        eve.Finances.Balance = 1200;
+        eve.Finances.WeeklyIncome = 800;
+        eve.Finances.MonthlyBills = 1500;
+        eve.Finances.Savings = 5000;
+
+        eve.Spending.Food = 100;
+        eve.Spending.Entertainment = 150;
+        eve.Spending.HobbySpending = 250;
+        eve.Spending.SavingsRate = .10m;
+
+
+        //job information
+        eve.Job.Title = "Teacher";
+        eve.Job.WeeklyIncome = 800;
+        eve.Job.StressLevel = 30;
+        eve.Job.Workplace = "Marysville High School";
 
         return eve;
     }

@@ -1,5 +1,9 @@
 ﻿namespace LivingStoryEngine.Characters;
 
+using LivingStoryEngine.Money;
+using LivingStoryEngine.Relationshipsystems;
+using LivingStoryEngine.Systems;
+using LivingStoryEngine.Player;
 public class Character
 {
     public string Name { get; set; } = "";
@@ -35,11 +39,40 @@ public class Character
     public int Happiness { get; set; } = 50;
     public int Love { get; set; } = 0;
     public string LoveStatus { get; set; } = "Stranger";
+    public string LoveInterest { get; set; } = "";
+    public List<Relationship> Relationships { get; set; } = new();
+    public Relationship? GetRelationship(string targetName)
+    {
+        return Relationships
+            .FirstOrDefault(r => r.TargetName == targetName);
+    }
+    public int Heartbreak { get; set; } = 0;
+    public int Looks { get; set; } = 50;
+    public string Sex { get; set; } = "";
+    public Appearance Appearance { get; set; } = new();
+    public int Attractiveness { get; set; } = 50;
+    public int Charisma { get; set; } = 50;
+
+    public int Confidence { get; set; } = 50;
+
+    public int Maturity { get; set; } = 50;
+
+    public int LikesLooks { get; set; } = 50;
+
+    public int LikesCharisma { get; set; } = 50;
+
+    public int LikesConfidence { get; set; } = 50;
+
+    public int LikesMaturity { get; set; } = 50;
     public int Curiosity { get; set; } = 50;
     public List<string> Questions { get; set; } = new();
     public List<Trait> Traits { get; set; } = new();
     public int Energy { get; set; } = 100;
     public int Stress { get; internal set; }
+    public Money Finances { get; set; } = new();
+
+    public SpendingProfile Spending { get; set; } = new();
+    public Job Job { get; set; } = new();
 
     public void UpdateRelationshipStatus()
     {
@@ -64,8 +97,6 @@ public class Character
             RelationshipStatus = "Stranger";
         }
     }
-
-
 
     public void UpdateLoveStatus()
     {
@@ -92,12 +123,20 @@ public class Character
         else
         {
             LoveStatus = "Stranger";
-        } 
-    
-    
-    
+        }
     }
-    
+
+ 
+   
+
+    public void RecoverFromHeartbreak()
+    {
+        if (Heartbreak > 0)
+        {
+            Heartbreak--;
+        }
     }
+
+}
 
 
