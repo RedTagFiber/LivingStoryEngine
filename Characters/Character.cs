@@ -1,4 +1,4 @@
-﻿namespace LivingStoryEngine;
+﻿namespace LivingStoryEngine.Characters;
 
 public class Character
 {
@@ -26,13 +26,18 @@ public class Character
     public string CurrentDecision { get; set; } = "";
 
     public string Thought { get; set; } = "";
+    public string JournalEntry { get; set; } = "";
 
     public string RelationshipStatus { get; set; } = "Friend";
 
     public string Location { get; set; } = "";
 
     public int Happiness { get; set; } = 50;
-
+    public int Love { get; set; } = 0;
+    public string LoveStatus { get; set; } = "Stranger";
+    public int Curiosity { get; set; } = 50;
+    public List<string> Questions { get; set; } = new();
+    public List<Trait> Traits { get; set; } = new();
     public int Energy { get; set; } = 100;
     public int Stress { get; internal set; }
 
@@ -59,4 +64,40 @@ public class Character
             RelationshipStatus = "Stranger";
         }
     }
-}
+
+
+
+    public void UpdateLoveStatus()
+    {
+        if (Love >= 90)
+        {
+            LoveStatus = "Soulmate";
+        }
+        else if (Love >= 75)
+        {
+            LoveStatus = "In Love";
+        }
+        else if (Love >= 60)
+        {
+            LoveStatus = "Dating";
+        }
+        else if (Love >= 40)
+        {
+            LoveStatus = "Interested";
+        }
+        else if (Love >= 20)
+        {
+            LoveStatus = "Friend";
+        }
+        else
+        {
+            LoveStatus = "Stranger";
+        } 
+    
+    
+    
+    }
+    
+    }
+
+
