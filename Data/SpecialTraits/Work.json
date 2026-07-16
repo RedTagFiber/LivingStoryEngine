@@ -1,0 +1,411 @@
+{
+  "version": "1.0",
+
+  "_categoryNotes": {
+    "category": "SpecialWorkTraits",
+    "purpose": "Traits that affect careers, productivity, achievement, leadership, workplace success, and workplace failures.",
+    "maxPerCharacter": 3,
+    "totalTraits": 20,
+    "positiveTraits": 10,
+    "negativeTraits": 10
+  },
+
+  "traits": [
+
+    {
+      "name": "Workaholic",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Places exceptional importance on professional success and productivity.",
+      "rarity": "Uncommon",
+      "_traitPurpose": "Creates highly career-focused characters.",
+      "_howItChangesCharacter": "Frequently prioritizes work over recreation.",
+      "_designNotes": "Common among executives and founders.",
+
+      "effects": {
+        "WorkFocus": 0.50,
+        "Career": 0.30,
+        "Family": -0.20,
+        "BurnoutRisk": 0.35
+      },
+
+      "_effectNotes": {
+        "WorkFocus": "Works harder and longer.",
+        "Career": "More interested in advancement.",
+        "Family": "Family receives less attention.",
+        "BurnoutRisk": "Stress accumulates faster."
+      },
+
+      "growsFrom": [ "Achievement", "Responsibility", "CareerSuccess" ],
+      "_growthNotes": "Often forms after repeated workplace success.",
+
+      "conflictsWith": [ "Family", "WorkLifeBalance" ],
+      "_conflictNotes": "Difficult to balance work and family priorities.",
+
+      "usedBySystems": [ "Career", "Goals", "MentalHealth" ],
+
+      "_systemNotes": "Strong influence on career progression.",
+
+      "relationshipEffects": [
+        "May neglect relationships",
+        "Less available socially"
+      ],
+
+      "_relationshipNotes": "Can weaken relationships over time.",
+
+      "memoryEffects": [
+        "Career accomplishments carry extra weight"
+      ],
+
+      "_memoryNotes": "Work achievements become defining memories."
+    },
+
+    {
+      "name": "ProblemSolver",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Naturally excels at identifying and solving problems.",
+      "rarity": "Rare",
+
+      "_traitPurpose": "Improves workplace effectiveness.",
+
+      "_howItChangesCharacter": "Looks for solutions before asking for help.",
+
+      "_designNotes": "Excellent for leadership and engineering careers.",
+
+      "effects": {
+        "Creativity": 0.20,
+        "Knowledge": 0.20,
+        "Determination": 0.15,
+        "DecisionQuality": 0.30
+      },
+
+      "_effectNotes": {
+        "DecisionQuality": "Improves solutions."
+      },
+
+      "growsFrom": [ "Experience", "Learning", "Curiosity" ],
+
+      "_growthNotes": "Built through solving difficult challenges.",
+
+      "conflictsWith": [ "GivingUp" ],
+
+      "_conflictNotes": "Requires persistence.",
+
+      "usedBySystems": [ "Career", "DecisionMaking" ],
+
+      "_systemNotes": "Useful in workplace evaluations.",
+
+      "relationshipEffects": [
+        "Helps coworkers solve problems"
+      ],
+
+      "_relationshipNotes": "Builds trust in teams.",
+
+      "memoryEffects": [
+        "Remembers successful solutions"
+      ],
+
+      "_memoryNotes": "Past solutions become references."
+    },
+
+    {
+      "name": "NaturalLeader",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Others naturally seek guidance and direction from this person.",
+      "rarity": "Rare",
+
+      "_traitPurpose": "Creates strong leaders.",
+
+      "_howItChangesCharacter": "Frequently takes charge.",
+
+      "_designNotes": "Useful for managers and founders.",
+
+      "effects": {
+        "Leadership": 0.50,
+        "Confidence": 0.20,
+        "Charisma": 0.15,
+        "CareerPerformance": 0.20
+      },
+
+      "_effectNotes": {
+        "Leadership": "Major leadership boost."
+      },
+
+      "growsFrom": [ "Confidence", "Achievement", "Responsibility" ],
+
+      "_growthNotes": "Built through responsibility.",
+
+      "conflictsWith": [ "Passivity" ],
+
+      "_conflictNotes": "Opposite leadership style.",
+
+      "usedBySystems": [ "Career", "Groups" ],
+
+      "_systemNotes": "Frequently selected for leadership slots.",
+
+      "relationshipEffects": [
+        "Coworkers seek advice"
+      ],
+
+      "_relationshipNotes": "Can attract followers.",
+
+      "memoryEffects": [
+        "Leadership wins remain memorable"
+      ],
+
+      "_memoryNotes": "Success reinforces leadership."
+    },
+
+    {
+      "name": "Teacher",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Enjoys helping others learn and improve.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Knowledge": 0.20,
+        "Empathy": 0.20,
+        "ConversationSkill": 0.15
+      },
+
+      "_effectNotes": {
+        "Knowledge": "Values knowledge sharing."
+      },
+
+      "growsFrom": [ "Experience", "Learning" ],
+
+      "conflictsWith": [ "SelfCenteredness" ],
+
+      "usedBySystems": [ "Career", "Education" ],
+
+      "relationshipEffects": [ "Frequently mentors others" ],
+
+      "memoryEffects": [ "Teaching experiences gain significance" ]
+    },
+
+    {
+      "name": "Inventor",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Frequently generates original ideas and innovations.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Creativity": 0.50,
+        "Curiosity": 0.30,
+        "Adaptability": 0.10
+      },
+
+      "_effectNotes": {
+        "Creativity": "Major innovation increase."
+      },
+
+      "growsFrom": [ "Curiosity", "Knowledge" ],
+
+      "conflictsWith": [ "RigidThinking" ],
+
+      "usedBySystems": [ "Career", "ProblemSolving" ],
+
+      "relationshipEffects": [ "Shares ideas enthusiastically" ],
+
+      "memoryEffects": [ "Breakthrough moments become major memories" ]
+    },
+
+    {
+      "name": "Entrepreneur",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Driven to build businesses and create opportunities.",
+      "rarity": "Rare",
+      "effects": {
+        "RiskTolerance": 0.40,
+        "Career": 0.30,
+        "Confidence": 0.20
+      }
+    },
+
+    {
+      "name": "Perfectionist",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Strives for flawless results.",
+      "rarity": "Uncommon",
+      "effects": {
+        "Discipline": 0.20,
+        "WorkFocus": 0.20,
+        "Anxiety": 0.20
+      }
+    },
+
+    {
+      "name": "Strategist",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Excels at long-term planning.",
+      "rarity": "Rare",
+      "effects": {
+        "Reflection": 0.25,
+        "Knowledge": 0.20,
+        "DecisionQuality": 0.35
+      }
+    },
+
+    {
+      "name": "ReliableWorker",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Consistently dependable and productive.",
+      "rarity": "Common",
+      "effects": {
+        "Responsibility": 0.40,
+        "Discipline": 0.25,
+        "Trust": 0.15
+      }
+    },
+
+    {
+      "name": "Innovator",
+      "category": "Work",
+      "alignment": "Positive",
+      "description": "Frequently introduces new ideas and improvements.",
+      "rarity": "Rare",
+      "effects": {
+        "Creativity": 0.40,
+        "Adaptability": 0.20,
+        "Curiosity": 0.20
+      }
+    },
+
+    {
+      "name": "BurnoutProne",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Frequently becomes mentally exhausted from prolonged work.",
+      "rarity": "Common",
+      "effects": {
+        "WorkFocus": -0.20,
+        "Resilience": -0.25,
+        "BurnoutRisk": 0.60
+      }
+    },
+
+    {
+      "name": "CreditStealer",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Claims credit for work completed by others.",
+      "rarity": "Rare",
+      "effects": {
+        "Trust": -0.40,
+        "Honesty": -0.35,
+        "Career": 0.10
+      }
+    },
+
+    {
+      "name": "Micromanager",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Attempts to control every small detail.",
+      "rarity": "Uncommon",
+      "effects": {
+        "Leadership": -0.15,
+        "Trust": -0.20,
+        "Anxiety": 0.25
+      }
+    },
+
+    {
+      "name": "OfficePolitician",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Focuses on workplace politics over productivity.",
+      "rarity": "Rare",
+      "effects": {
+        "Trust": -0.30,
+        "NeedForApproval": 0.20,
+        "Career": 0.10
+      }
+    },
+
+    {
+      "name": "JobHopper",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Rarely stays in one job long.",
+      "rarity": "Uncommon",
+      "effects": {
+        "Commitment": -0.25,
+        "Career": -0.15,
+        "Adaptability": 0.15
+      }
+    },
+
+    {
+      "name": "ResistanceToChange",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Strong preference for familiar routines and methods.",
+      "rarity": "Common",
+      "effects": {
+        "Adaptability": -0.40,
+        "Curiosity": -0.20
+      }
+    },
+
+    {
+      "name": "RuleBreaker",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Frequently ignores policies and procedures.",
+      "rarity": "Uncommon",
+      "effects": {
+        "Responsibility": -0.30,
+        "RiskTolerance": 0.25
+      }
+    },
+
+    {
+      "name": "CornerCutter",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Sacrifices quality for speed.",
+      "rarity": "Common",
+      "effects": {
+        "Discipline": -0.25,
+        "Honesty": -0.20,
+        "WorkFocus": 0.10
+      }
+    },
+
+    {
+      "name": "ChronicComplainer",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Frequently focuses on workplace problems and frustrations.",
+      "rarity": "Common",
+      "effects": {
+        "Optimism": -0.35,
+        "Community": -0.20,
+        "Sociability": -0.10
+      }
+    },
+
+    {
+      "name": "AuthorityIssues",
+      "category": "Work",
+      "alignment": "Negative",
+      "description": "Frequently clashes with supervisors and leadership.",
+      "rarity": "Uncommon",
+      "effects": {
+        "Career": -0.20,
+        "Leadership": -0.10,
+        "RiskTolerance": 0.10
+      }
+    }
+
+  ]
+}

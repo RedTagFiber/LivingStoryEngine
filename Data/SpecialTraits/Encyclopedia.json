@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+
+  "_notes": {
+    "purpose": "Master Special Trait Registry",
+    "usedBy": [
+      "MemorySystem",
+      "RelationshipSystem",
+      "CareerSystem",
+      "DecisionSystem",
+      "CharacterFactory"
+    ]
+  },
+
+  "files": [
+    "Friendship.json",
+    "Relationship.json",
+    "Growth.json",
+    "Work.json",
+    "Flaws.json"
+  ],
+
+  "summary": {
+    "Friendship": 20,
+    "Relationship": 20,
+    "Growth": 20,
+    "Work": 20,
+    "Flaw": 20,
+
+    "TotalSpecialTraits": 100
+  }
+}

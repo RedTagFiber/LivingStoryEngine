@@ -1,0 +1,339 @@
+{
+  "version": "1.0",
+
+  "_categoryNotes": {
+    "category": "Growth",
+    "purpose": "Traits that affect learning, wisdom, self-improvement, personal development, adaptability, resilience, and long-term character growth.",
+    "maxPerCharacter": 3,
+    "positiveTraits": 10,
+    "negativeTraits": 10,
+    "totalTraits": 20
+  },
+
+  "traits": [
+
+    {
+      "name": "DeepThinker",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Naturally spends time reflecting on experiences, decisions, and life lessons.",
+      "rarity": "Rare",
+
+      "_traitPurpose": "Creates thoughtful characters who learn from experience.",
+      "_howItChangesCharacter": "Thinks before acting and searches for deeper meaning.",
+      "_designNotes": "Excellent for mentors, philosophers, and wise characters.",
+
+      "effects": {
+        "Reflection": 0.40,
+        "SelfAwareness": 0.25,
+        "Knowledge": 0.15
+      },
+
+      "_effectNotes": {
+        "Reflection": "Encourages self-analysis.",
+        "SelfAwareness": "Improves understanding of personal behaviors.",
+        "Knowledge": "More likely to learn from experiences."
+      },
+
+      "growsFrom": [
+        "LifeChallenges",
+        "Loss",
+        "Experience"
+      ],
+
+      "_growthNotes": "Often develops after meaningful life events.",
+
+      "conflictsWith": [
+        "Impulsiveness"
+      ],
+
+      "_conflictNotes": "Reflection and impulsiveness oppose one another.",
+
+      "usedBySystems": [
+        "Growth",
+        "DecisionMaking",
+        "Memories"
+      ],
+
+      "_systemNotes": "Improves long-term character development.",
+
+      "relationshipEffects": [
+        "Learns from relationship mistakes"
+      ],
+
+      "_relationshipNotes": "Relationships produce valuable lessons.",
+
+      "memoryEffects": [
+        "Processes memories more deeply"
+      ],
+
+      "_memoryNotes": "Important events are analyzed thoroughly."
+    },
+
+    {
+      "name": "OldSoul",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Possesses unusual wisdom and maturity for their age.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Reflection": 0.20,
+        "Empathy": 0.15,
+        "Patience": 0.20,
+        "Faith": 0.15
+      }
+    },
+
+    {
+      "name": "Mentor",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Actively helps others learn and improve themselves.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Empathy": 0.20,
+        "Knowledge": 0.20,
+        "Leadership": 0.15,
+        "Community": 0.15
+      }
+    },
+
+    {
+      "name": "LearnsFromFailure",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Uses setbacks as opportunities for improvement.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Resilience": 0.35,
+        "SelfImprovement": 0.30,
+        "Optimism": 0.10
+      }
+    },
+
+    {
+      "name": "NeverGivesUp",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Persistently continues despite obstacles and setbacks.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Determination": 0.50,
+        "Resilience": 0.25,
+        "Courage": 0.15
+      }
+    },
+
+    {
+      "name": "GrowthMindset",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Believes abilities and skills can improve through effort.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "SelfImprovement": 0.40,
+        "Optimism": 0.20,
+        "Adaptability": 0.15
+      }
+    },
+
+    {
+      "name": "SelfReflective",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Regularly evaluates personal actions and motivations.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Reflection": 0.35,
+        "SelfAwareness": 0.30
+      }
+    },
+
+    {
+      "name": "WiseCounsel",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Provides thoughtful advice and guidance to others.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Knowledge": 0.20,
+        "Empathy": 0.20,
+        "Reflection": 0.20
+      }
+    },
+
+    {
+      "name": "AdaptableSurvivor",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Thrives despite adversity and changing circumstances.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Adaptability": 0.40,
+        "Resilience": 0.40
+      }
+    },
+
+    {
+      "name": "PersonalTransformer",
+      "category": "Growth",
+      "alignment": "Positive",
+      "description": "Capable of dramatically changing and improving over time.",
+      "rarity": "VeryRare",
+
+      "effects": {
+        "SelfImprovement": 0.50,
+        "Adaptability": 0.30,
+        "Reflection": 0.15
+      }
+    },
+
+    {
+      "name": "StuckInPast",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Struggles to move beyond past failures and experiences.",
+      "rarity": "Common",
+
+      "effects": {
+        "Adaptability": -0.30,
+        "Optimism": -0.20,
+        "Reflection": 0.10
+      }
+    },
+
+    {
+      "name": "VictimMentality",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Frequently believes life circumstances are always someone else's fault.",
+      "rarity": "Common",
+
+      "effects": {
+        "SelfAwareness": -0.35,
+        "Resilience": -0.25,
+        "Optimism": -0.15
+      }
+    },
+
+    {
+      "name": "SelfSabotaging",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Undermines personal progress through harmful decisions.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "SelfImprovement": -0.40,
+        "Confidence": -0.20,
+        "Determination": -0.15
+      }
+    },
+
+    {
+      "name": "ClosedMinded",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Resists new information, ideas, and perspectives.",
+      "rarity": "Common",
+
+      "effects": {
+        "Curiosity": -0.40,
+        "Knowledge": -0.20,
+        "Adaptability": -0.25
+      }
+    },
+
+    {
+      "name": "BlameShifter",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Avoids responsibility by blaming others.",
+      "rarity": "Common",
+
+      "effects": {
+        "Responsibility": -0.40,
+        "SelfAwareness": -0.20
+      }
+    },
+
+    {
+      "name": "FearOfChange",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Feels uncomfortable with major life changes.",
+      "rarity": "Common",
+
+      "effects": {
+        "Adaptability": -0.45,
+        "Anxiety": 0.25
+      }
+    },
+
+    {
+      "name": "ComfortSeeker",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Avoids difficult situations in favor of comfort and security.",
+      "rarity": "Common",
+
+      "effects": {
+        "Courage": -0.25,
+        "Adventure": -0.20,
+        "Security": 0.15
+      }
+    },
+
+    {
+      "name": "LearnedHelplessness",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Believes effort will not improve outcomes.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Determination": -0.50,
+        "Hopefulness": -0.30,
+        "SelfImprovement": -0.25
+      }
+    },
+
+    {
+      "name": "ArrogantLearner",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Believes there is little left to learn from others.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Knowledge": -0.10,
+        "Curiosity": -0.30,
+        "SelfAwareness": -0.20,
+        "Confidence": 0.15
+      }
+    },
+
+    {
+      "name": "AvoidsResponsibility",
+      "category": "Growth",
+      "alignment": "Negative",
+      "description": "Avoids accountability and personal ownership.",
+      "rarity": "Common",
+
+      "effects": {
+        "Responsibility": -0.50,
+        "SelfImprovement": -0.20,
+        "Determination": -0.15
+      }
+    }
+
+  ]
+}

@@ -7,4 +7,40 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Data\SpecialTraits\Encyclopedia.json" />
+    <None Remove="Data\SpecialTraits\Friendship.json" />
+    <None Remove="Data\SpecialTraits\Growth.json" />
+    <None Remove="Data\SpecialTraits\Relationship.json" />
+    <None Remove="Data\SpecialTraits\Work.json" />
+    <None Remove="Data\TraitEncyclopedia.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\SpecialTraits\Encyclopedia.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SpecialTraits\Friendship.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SpecialTraits\Growth.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SpecialTraits\Relationship.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SpecialTraits\Work.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TraitEncyclopedia.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\SpecialTraits\Flaws.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

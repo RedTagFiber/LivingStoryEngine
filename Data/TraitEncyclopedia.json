@@ -1,0 +1,1808 @@
+﻿{
+  "traits": [
+    {
+      "name": "Discipline",
+      "category": "Personality",
+      "description": "Ability to consistently do what needs to be done despite discomfort or distraction.",
+      "stability": "High",
+      "growthPotential": "Medium",
+      "defaultValue": 50,
+
+      "effects": {
+        "GoalCompletion": 0.80,
+        "CareerPerformance": 0.60,
+        "RoutineConsistency": 0.90,
+        "SelfImprovementSuccess": 0.50
+      },
+
+      "growsFrom": [
+        "Achievement",
+        "Routine",
+        "Responsibility"
+      ],
+
+      "declinesFrom": [
+        "Burnout",
+        "RepeatedFailure",
+        "Chaos"
+      ],
+
+      "usedBySystems": [
+        "Career",
+        "Goals",
+        "DecisionMaking",
+        "Growth"
+      ],
+
+      "conflictsWith": [
+        "Avoidance"
+      ],
+
+      "relationshipEffects": [
+        "Reliable partner",
+        "Reliable friend"
+      ],
+
+      "memoryEffects": [
+        "Success strengthens discipline",
+        "Repeated failure weakens discipline"
+      ]
+    },
+
+    {
+      "name": "SelfAwareness",
+      "category": "Personality",
+      "description": "Understanding of personal strengths, weaknesses, motivations, and emotional patterns.",
+      "stability": "High",
+      "growthPotential": "High",
+      "defaultValue": 50,
+
+      "effects": {
+        "PersonalGrowth": 0.90,
+        "DecisionQuality": 0.60,
+        "EmotionalControl": 0.50,
+        "RelationshipRepair": 0.40
+      },
+
+      "growsFrom": [
+        "Reflection",
+        "Experience",
+        "Mentorship"
+      ],
+
+      "declinesFrom": [
+        "Denial",
+        "Avoidance"
+      ],
+
+      "usedBySystems": [
+        "Growth",
+        "Memories",
+        "DecisionMaking"
+      ],
+
+      "conflictsWith": [
+        "Denial"
+      ],
+
+      "relationshipEffects": [
+        "Recognizes personal mistakes",
+        "Communicates needs better"
+      ],
+
+      "memoryEffects": [
+        "Learns lessons from memories faster"
+      ]
+    },
+
+    {
+      "name": "NeedForApproval",
+      "category": "Personality",
+      "description": "Desire for validation and acceptance from others.",
+      "stability": "Medium",
+      "growthPotential": "Medium",
+      "defaultValue": 50,
+
+      "effects": {
+        "PeoplePleasing": 0.80,
+        "ConflictAvoidance": 0.40,
+        "PeerPressure": 0.60,
+        "SelfConfidence": -0.30
+      },
+
+      "growsFrom": [
+        "Criticism",
+        "Rejection",
+        "Insecurity"
+      ],
+
+      "declinesFrom": [
+        "Achievement",
+        "Confidence",
+        "SelfGrowth"
+      ],
+
+      "usedBySystems": [
+        "Social",
+        "Relationships",
+        "DecisionMaking"
+      ],
+
+      "conflictsWith": [
+        "Independence",
+        "Confidence"
+      ],
+
+      "relationshipEffects": [
+        "People pleasing",
+        "Difficulty setting boundaries"
+      ],
+
+      "memoryEffects": [
+        "Rejection memories strengthen trait"
+      ]
+    },
+
+    {
+      "name": "RiskTolerance",
+      "category": "Personality",
+      "description": "Willingness to take chances despite uncertain outcomes.",
+      "stability": "Medium",
+      "growthPotential": "Medium",
+      "defaultValue": 50,
+
+      "effects": {
+        "AdventureSeeking": 0.80,
+        "DatingInitiation": 0.50,
+        "CareerRiskTaking": 0.60,
+        "OpportunityPursuit": 0.70
+      },
+
+      "growsFrom": [
+        "Success",
+        "Adventure",
+        "PositiveExperiences"
+      ],
+
+      "declinesFrom": [
+        "Trauma",
+        "Failure",
+        "Fear"
+      ],
+
+      "usedBySystems": [
+        "Career",
+        "Dating",
+        "DecisionMaking",
+        "Exploration"
+      ],
+
+      "conflictsWith": [
+        "Security"
+      ],
+
+      "relationshipEffects": [
+        "More likely to approach new people"
+      ],
+
+      "memoryEffects": [
+        "Successful risks strengthen trait",
+        "Major failures weaken trait"
+      ]
+    },
+
+    {
+      "name": "Kindness",
+      "category": "Personality",
+      "description": "Desire to care for and help others.",
+      "stability": "High",
+      "growthPotential": "Low",
+      "defaultValue": 50,
+
+      "effects": {
+        "HelpingBehavior": 0.90,
+        "CommunityReputation": 0.50,
+        "Forgiveness": 0.30,
+        "Empathy": 0.20
+      },
+
+      "growsFrom": [
+        "SupportiveRelationships",
+        "PositiveFamilyExperiences"
+      ],
+
+      "declinesFrom": [
+        "Abuse",
+        "Exploitation",
+        "Betrayal"
+      ],
+
+      "usedBySystems": [
+        "Relationships",
+        "Friendships",
+        "Community",
+        "Reputation"
+      ],
+
+      "conflictsWith": [
+        "Cruelty",
+        "Ruthlessness"
+      ],
+
+      "relationshipEffects": [
+        "Builds trust",
+        "Provides support"
+      ],
+
+      "memoryEffects": [
+        "Positive helping experiences reinforce kindness"
+      ]
+    },
+
+    {
+      "name": "Honesty",
+      "category": "Personality",
+      "description": "Tendency to be truthful and sincere.",
+      "stability": "High",
+      "growthPotential": "Low",
+      "defaultValue": 50,
+
+      "effects": {
+        "TrustBuilding": 0.80,
+        "RelationshipStability": 0.40,
+        "Reputation": 0.50
+      },
+
+      "growsFrom": [
+        "Trust",
+        "StrongRelationships"
+      ],
+
+      "declinesFrom": [
+        "Fear",
+        "Manipulation",
+        "SelfPreservation"
+      ],
+
+      "usedBySystems": [
+        "Friendship",
+        "Romance",
+        "Reputation"
+      ],
+
+      "conflictsWith": [
+        "Deception"
+      ],
+
+      "relationshipEffects": [
+        "Builds trust faster"
+      ],
+
+      "memoryEffects": [
+        "Being caught lying weakens honesty"
+      ]
+    },
+
+    {
+      "name": "Loyalty",
+      "category": "Personality",
+      "description": "Commitment to people, promises, and causes.",
+      "stability": "Very High",
+      "growthPotential": "Low",
+      "defaultValue": 50,
+
+      "effects": {
+        "RelationshipCommitment": 0.80,
+        "FriendshipRetention": 0.70,
+        "CheatingResistance": 0.60
+      },
+
+      "growsFrom": [
+        "StrongRelationships",
+        "FamilyBonds"
+      ],
+
+      "declinesFrom": [
+        "Betrayal"
+      ],
+
+      "usedBySystems": [
+        {
+          "traits": [
+
+            {
+              "name": "Patience",
+              "category": "Personality",
+              "description": "Ability to tolerate delays, frustration, and difficult situations without reacting impulsively.",
+              "stability": "High",
+              "growthPotential": "Medium",
+              "defaultValue": 50,
+
+              "effects": {
+                "ConflictResolution": 0.70,
+                "RelationshipStability": 0.50,
+                "ParentingQuality": 0.60,
+                "StressResistance": 0.30
+              },
+
+              "growsFrom": [
+                "Maturity",
+                "Reflection",
+                "LifeExperience"
+              ],
+
+              "declinesFrom": [
+                "Stress",
+                "Burnout",
+                "ConstantConflict"
+              ],
+
+              "usedBySystems": [
+                "Relationships",
+                "Parenting",
+                "DecisionMaking"
+              ],
+
+              "conflictsWith": [
+                "Impulsiveness"
+              ],
+
+              "relationshipEffects": [
+                "Better conflict resolution",
+                "More forgiving during disagreements"
+              ],
+
+              "memoryEffects": [
+                "Repeated frustrations reduce patience",
+                "Successful conflict resolution increases patience"
+              ]
+            },
+
+            {
+              "name": "Determination",
+              "category": "Personality",
+              "description": "Persistence when facing obstacles and setbacks.",
+              "stability": "High",
+              "growthPotential": "Medium",
+              "defaultValue": 50,
+
+              "effects": {
+                "GoalCompletion": 0.80,
+                "CareerPersistence": 0.70,
+                "RelationshipPersistence": 0.40
+              },
+
+              "growsFrom": [
+                "Achievement",
+                "OvercomingChallenges"
+              ],
+
+              "declinesFrom": [
+                "Hopelessness",
+                "RepeatedFailure"
+              ],
+
+              "usedBySystems": [
+                "Goals",
+                "Career",
+                "Growth"
+              ],
+
+              "conflictsWith": [
+                "GivingUp"
+              ],
+
+              "relationshipEffects": [
+                "Works through relationship problems"
+              ],
+
+              "memoryEffects": [
+                "Success builds determination",
+                "Repeated failures may weaken it"
+              ]
+            },
+
+            {
+              "name": "Independence",
+              "category": "Personality",
+              "description": "Preference for relying on oneself rather than others.",
+              "stability": "High",
+              "growthPotential": "Medium",
+              "defaultValue": 50,
+
+              "effects": {
+                "SelfReliance": 0.80,
+                "DecisionAutonomy": 0.70,
+                "NeedForSupport": -0.40
+              },
+
+              "growsFrom": [
+                "Confidence",
+                "PersonalSuccess"
+              ],
+
+              "declinesFrom": [
+                "Dependency",
+                "LowConfidence"
+              ],
+
+              "usedBySystems": [
+                "Lifestyle",
+                "Career",
+                "DecisionMaking"
+              ],
+
+              "conflictsWith": [
+                "NeedForConnection",
+                "NeedForApproval"
+              ],
+
+              "relationshipEffects": [
+                "Less dependent on partners",
+                "More personal space"
+              ],
+
+              "memoryEffects": [
+                "Successful self-reliance strengthens trait"
+              ]
+            },
+
+            {
+              "name": "Adaptability",
+              "category": "Personality",
+              "description": "Ability to adjust to changing circumstances.",
+              "stability": "Medium",
+              "growthPotential": "High",
+              "defaultValue": 50,
+
+              "effects": {
+                "ChangeAcceptance": 0.80,
+                "StressRecovery": 0.30,
+                "LifeTransitionSuccess": 0.70
+              },
+
+              "growsFrom": [
+                "NewExperiences",
+                "Travel",
+                "Change"
+              ],
+
+              "declinesFrom": [
+                "Fear",
+                "Isolation"
+              ],
+
+              "usedBySystems": [
+                "Growth",
+                "Career",
+                "LifeEvents"
+              ],
+
+              "conflictsWith": [
+                "Rigidity"
+              ],
+
+              "relationshipEffects": [
+                "Handles relationship changes better"
+              ],
+
+              "memoryEffects": [
+                "Successfully adapting strengthens trait"
+              ]
+            },
+
+            {
+              "name": "Confidence",
+              "category": "Social",
+              "description": "Belief in personal ability and worth.",
+              "stability": "Medium",
+              "growthPotential": "High",
+              "defaultValue": 50,
+
+              "effects": {
+                "DatingApproachChance": 0.75,
+                "ConversationInitiation": 0.60,
+                "LeadershipChance": 0.50,
+                "CareerAdvancement": 0.30
+              },
+
+              "growsFrom": [
+                "Achievement",
+                "Success",
+                "PositiveRelationships"
+              ],
+
+              "declinesFrom": [
+                "Failure",
+                "Rejection",
+                "Embarrassment"
+              ],
+
+              "usedBySystems": [
+                "Dating",
+                "Career",
+                "Social",
+                "DecisionMaking"
+              ],
+
+              "conflictsWith": [
+                "Anxiety",
+                "NeedForApproval"
+              ],
+
+              "relationshipEffects": [
+                "More likely to approach others",
+                "More likely to initiate romance"
+              ],
+
+              "memoryEffects": [
+                "Success raises confidence
+
+                {
+                  "traits": [
+
+                    {
+                      "name": "Empathy",
+                      "category": "Social",
+                      "description": "Ability to understand and relate to the feelings and experiences of others.",
+                      "stability": "High",
+                      "growthPotential": "Medium",
+                      "defaultValue": 50,
+
+                      "effects": {
+                        "RelationshipGrowth": 0.60,
+                        "SupportEffectiveness": 0.80,
+                        "ConflictResolution": 0.40,
+                        "ParentingQuality": 0.60
+                      },
+
+                      "growsFrom": [
+                        "LifeExperience",
+                        "Kindness",
+                        "MeaningfulRelationships"
+                      ],
+
+                      "declinesFrom": [
+                        "Cynicism",
+                        "EmotionalBurnout",
+                        "Trauma"
+                      ],
+
+                      "usedBySystems": [
+                        "Relationships",
+                        "Friendships",
+                        "Parenting",
+                        "Community"
+                      ],
+
+                      "conflictsWith": [
+                        "SelfCenteredness"
+                      ],
+
+                      "relationshipEffects": [
+                        "Provides emotional support",
+                        "Understands partner needs",
+                        "Strengthens friendships"
+                      ],
+
+                      "memoryEffects": [
+                        "Emotionally significant memories increase empathy"
+                      ]
+                    },
+
+                    {
+                      "name": "Approachability",
+                      "category": "Social",
+                      "description": "How comfortable other people feel approaching and interacting with this person.",
+                      "stability": "Medium",
+                      "growthPotential": "Medium",
+                      "defaultValue": 50,
+
+                      "effects": {
+                        "FriendshipInitiation": 0.70,
+                        "SocialOpportunities": 0.60,
+                        "DatingInterest": 0.30
+                      },
+
+                      "growsFrom": [
+                        "Kindness",
+                        "Confidence",
+                        "PositiveSocialExperiences"
+                      ],
+
+                      "declinesFrom": [
+                        "Hostility",
+                        "Withdrawal",
+                        "Isolation"
+                      ],
+
+                      "usedBySystems": [
+                        "Social",
+                        "Friendships",
+                        "Dating"
+                      ],
+
+                      "conflictsWith": [
+                        "Guardedness"
+                      ],
+
+                      "relationshipEffects": [
+                        "Others initiate conversations more often"
+                      ],
+
+                      "memoryEffects": [
+                        "Positive social interactions improve approachability"
+                      ]
+                    },
+
+                    {
+                      "name": "Trust",
+                      "category": "Relationship",
+                      "description": "Willingness to believe in and rely on others.",
+                      "stability": "Medium",
+                      "growthPotential": "Medium",
+                      "defaultValue": 50,
+
+                      "effects": {
+                        "FriendshipGrowth": 0.60,
+                        "RomanceGrowth": 0.70,
+                        "AdviceAcceptance": 0.50,
+                        "EmotionalOpenness": 0.80
+                      },
+
+                      "growsFrom": [
+                        "Honesty",
+                        "SupportiveRelationships
+                        {
+                          "traits": [
+
+                            {
+                              "name": "Optimism",
+                              "category": "Emotional",
+                              "description": "Expectation that future outcomes will generally be positive.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "GoalPursuit": 0.50,
+                                "StressResistance": 0.40,
+                                "RelationshipPersistence": 0.30,
+                                "OpportunitySeeking": 0.50
+                              },
+
+                              "growsFrom": [
+                                "Success",
+                                "SupportiveRelationships",
+                                "PositiveLifeEvents"
+                              ],
+
+                              "declinesFrom": [
+                                "RepeatedFailure",
+                                "Trauma",
+                                "ChronicDisappointment"
+                              ],
+
+                              "usedBySystems": [
+                                "DecisionMaking",
+                                "Relationships",
+                                "Career",
+                                "Growth"
+                              ],
+
+                              "conflictsWith": [
+                                "Pessimism"
+                              ],
+
+                              "relationshipEffects": [
+                                "More willing to work through problems",
+                                "Encourages others"
+                              ],
+
+                              "memoryEffects": [
+                                "Positive memories strengthen optimism",
+                                "Repeated negative memories weaken optimism"
+                              ]
+                            },
+
+                            {
+                              "name": "Resilience",
+                              "category": "Emotional",
+                              "description": "Ability to recover from setbacks and hardship.",
+                              "stability": "Medium",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "StressRecovery": 0.80,
+                                "TraumaResistance": 0.60,
+                                "GoalPersistence": 0.50
+                              },
+
+                              "growsFrom": [
+                                "OvercomingChallenges",
+                                "SupportSystems",
+                                "Experience"
+                              ],
+
+                              "declinesFrom": [
+                                "ChronicTrauma",
+                                "Burnout",
+                                "Hopelessness"
+                              ],
+
+                              "usedBySystems": [
+                                "Growth",
+                                "MentalHealth",
+                                "Relationships",
+                                "Career"
+                              ],
+
+                              "conflictsWith": [
+                                "LearnedHelplessness"
+                              ],
+
+                              "relationshipEffects": [
+                                "Recovers from relationship setbacks faster"
+                              ],
+
+                              "memoryEffects": [
+                                "Surviving hardship increases resilience"
+                              ]
+                            },
+
+                            {
+                              "name": "Sensitivity",
+                              "category": "Emotional",
+                              "description": "Intensity of emotional responses to experiences.",
+                              "stability": "Medium",
+                              "growthPotential": "Low",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "EmotionalImpact": 0.80,
+                                "EmpathyPotential": 0.30,
+                                "HeartbreakSeverity": 0.60
+                              },
+
+                              "growsFrom": [
+                                "EmotionalExperiences",
+                                "Empathy"
+                              ],
+
+                              "declinesFrom": [
+                                "EmotionalNumbing",
+                                "Detachment"
+                              ],
+
+                              "usedBySystems": [
+                                "Relationships",
+                                "Memories",
+                                "MentalHealth"
+                              ],
+
+                              "conflictsWith": [
+                                "EmotionalDetachment"
+                              ],
+
+                              "relationshipEffects": [
+                                "Experiences stronger emotional bonds",
+                                "Gets hurt more deeply"
+                              ],
+
+                              "memoryEffects": [
+                                "Emotionally charged memories have stronger impact"
+                              ]
+                            },
+
+                            {
+                              "name": "Anxiety",
+                              "category": "Emotional",
+                              "description": "Tendency to worry, anticipate problems, and feel uncertainty.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "RiskAvoidance": 0.60,
+                                "StressLevel": 0.80,
+                                "DecisionDelay": 0.40,
+                                "SocialAvoidance": 0.30
+                              },
+
+                              "growsFrom": [
+                                "Uncertainty",
+                                "Trauma",
+                                "Failure"
+                              ],
+
+                              "declinesFrom": [
+                                "Security",
+                                "Confidence",
+                                "SupportiveRelationships"
+                              ],
+
+                              "usedBySystems": [
+                                "DecisionMaking",
+                                "MentalHealth",
+                                "Dating",
+                                "Career"
+                              ],
+
+                              "conflictsWith": [
+                                "Confidence",
+                                "Courage"
+                              ],
+
+                              "relationshipEffects": [
+                                "May avoid difficult conversations",
+                                "May overthink relationships"
+                              ],
+
+                              "memoryEffects": [
+                                "Negative memories increase anxiety"
+                              ]
+                            },
+
+                            {
+                              "name": "EmotionalControl",
+                              "category": "Emotional",
+                              "description": "Ability to regulate emotional responses.",
+                              "stability": "Medium",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "ConflictManagement": 0.70,
+                                "ImpulseResistance": 0.50,
+                                "StressManagement": 0.60
+                              },
+
+                              "growsFrom": [
+                                "Reflection",
+                                "Maturity",
+                                "Experience"
+                              ],
+
+                              "declinesFrom": [
+                                "ExtremeStress",
+                                "Trauma",
+                                "Burnout"
+                              ],
+
+                              "usedBySystems": [
+                                "Relationships",
+                                "Career",
+                                "DecisionMaking",
+                                "MentalHealth"
+                              ],
+
+                              "conflictsWith": [
+                                "EmotionalVolatility"
+                              ],
+
+                              "relationshipEffects": [
+                                "Fewer emotional outbursts",
+                                "Better conflict handling"
+                              ],
+
+                              "memoryEffects": [
+                                "Learning from emotional mistakes strengthens control"
+                              ]
+                            },
+
+                            {
+                              "name": "Hopefulness",
+                              "category": "Emotional",
+                              "description": "Belief that life can improve and goals are achievable.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "FuturePlanning": 0.60,
+                                "RecoveryChance": 0.50,
+                                "GoalSetting": 0.40
+                              },
+
+                              "growsFrom": [
+                                "Support",
+                                "Success",
+                                "PositiveGrowth"
+                              ],
+
+                              "declinesFrom": [
+                                "RepeatedDisappointment",
+                                "Loss",
+                                "Failure"
+                              ],
+
+                              "usedBySystems": [
+                                "Growth",
+                                "Goals",
+                                "MentalHealth"
+                              ],
+
+                              "conflictsWith": [
+                                "Despair"
+                              ],
+
+                              "relationshipEffects": [
+                                "More likely to try relationships again after heartbreak"
+                              ],
+
+                              "memoryEffects": [
+                                "Positive memories increase hope",
+                                "Repeated disappointment decreases hope"
+                              ]
+                            },
+
+                            {
+                              "name": "SelfEsteem",
+                              "category": "Emotional",
+                              "description": "Overall perception of personal worth and value.",
+                              "stability": "Medium",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "Confidence": 0.60,
+                                "RelationshipSecurity": 0.30,
+                                "Resilience": 0.30
+                              },
+
+                              "growsFrom": [
+                                "Achievement",
+                                "Acceptance",
+                                "PersonalGrowth"
+                              ],
+
+                              "declinesFrom": [
+                                "Rejection",
+                                "Failure",
+                                "Humiliation"
+                              ],
+
+                              "usedBySystems": [
+                                "Dating",
+                                "Social",
+                                "Career",
+                                "MentalHealth"
+                              ],
+
+                              "conflictsWith": [
+                                "NeedForApproval"
+                              ],
+
+                              "relationshipEffects": [
+                                "Healthier boundaries",
+                                "Less dependency"
+                              ],
+
+                              "memoryEffects": [
+                                "Achievement memories raise self-esteem",
+                                "Rejection memories lower self-esteem"
+                              ]
+                            },
+
+                            {
+                              "name": "Courage",
+                              "category": "Emotional",
+                              "description": "Ability to act despite fear or uncertainty.",
+                              "stability": "Medium",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "RiskTaking": 0.40,
+                                "ConflictFacing": 0.60,
+                                "OpportunityPursuit": 0.60
+                              },
+
+                              "growsFrom": [
+                                "FacingFears",
+                                "Success",
+                                "PersonalGrowth"
+                              ],
+
+                              "declinesFrom": [
+                                "Trauma",
+                                "RepeatedFailure"
+                              ],
+
+                              "usedBySystems": [
+                                "DecisionMaking",
+                                "Dating",
+                                "Career",
+                                "Growth"
+                              ],
+
+                              "conflictsWith": [
+                                "Fear",
+                                "Anxiety"
+                              ],
+
+                              "relationshipEffects": [
+                                "More likely to express feelings",
+                                "More willing to address problems"
+                              ],
+
+                              "memoryEffects": [
+                                "Successfully facing fears increases courage"
+                              ]
+                            },
+
+                            {
+                              "name": "Reflection",
+                              "category": "Coping",
+                              "description": "Tendency to think deeply about experiences and learn from them.",
+                              "stability": "High",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "PersonalGrowth": 0.80,
+                                "LessonRetention": 0.70,
+                                "DecisionQuality": 0.40
+                              },
+
+                              "growsFrom": [
+                                "LifeExperience",
+                                "SelfAwareness",
+                                "Adversity"
+                              ],
+
+                              "declinesFrom": [
+                                "ConstantDistraction",
+                                "Avoidance"
+                              ],
+
+                              "usedBySystems": [
+                                "Growth",
+                                "Memories",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Impulsiveness"
+                              ],
+
+                              "relationshipEffects": [
+                                "Learns from relationship mistakes"
+                              ],
+
+                              "memoryEffects": [
+                                "Extracts lessons from memories"
+                              ]
+                            },
+
+                            {
+                              "name": "Faith",
+                              "category": "Coping",
+                              "description": "Reliance on spiritual or religious beliefs when navigating life.",
+                              "stability": "High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "StressRelief": 0.40,
+                                "Hopefulness": 0.30,
+                                "Forgiveness": 0.20
+                              },
+
+                              "growsFrom": [
+                                "SpiritualExperience",
+                                "Community",
+                                "PersonalReflection"
+                              ],
+
+                              "declinesFrom": [
+                                "SpiritualCrisis",
+                                "LossOfBelief"
+                              ],
+
+                              "usedBySystems": [
+                                "Coping",
+                                "Growth",
+                                "MentalHealth",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Cynicism"
+                              ],
+
+                              "relationshipEffects": [
+                                "May encourage forgiveness",
+                                "May influence partner choices"
+                              ],
+
+                              "memoryEffects": [
+                                "Can reframe painful memories into lessons"
+                              ]
+                            }
+
+                          ]
+                        }
+                        {
+                          "traits": [
+
+                            {
+                              "name": "SelfImprovement",
+                              "category": "Coping",
+                              "description": "Desire to improve oneself through learning, growth, and personal development.",
+                              "stability": "High",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "SkillGrowthRate": 0.70,
+                                "HabitFormation": 0.60,
+                                "RecoveryFromFailure": 0.40,
+                                "PersonalGrowth": 0.80
+                              },
+
+                              "growsFrom": [
+                                "Reflection",
+                                "Achievement",
+                                "Mentorship",
+                                "LifeChallenges"
+                              ],
+
+                              "declinesFrom": [
+                                "Hopelessness",
+                                "Burnout",
+                                "LearnedHelplessness"
+                              ],
+
+                              "usedBySystems": [
+                                "Growth",
+                                "Skills",
+                                "Career",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Complacency"
+                              ],
+
+                              "relationshipEffects": [
+                                "Works on relationship issues",
+                                "Attempts to become a better partner"
+                              ],
+
+                              "memoryEffects": [
+                                "Failures can become motivation for growth",
+                                "Success reinforces growth mindset"
+                              ]
+                            },
+
+                            {
+                              "name": "SeekingSupport",
+                              "category": "Coping",
+                              "description": "Willingness to seek help, advice, and emotional support from others.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "StressRecovery": 0.50,
+                                "RelationshipDependence": 0.30,
+                                "MentalHealthRecovery": 0.60
+                              },
+
+                              "growsFrom": [
+                                "Trust",
+                                "PositiveRelationships",
+                                "Community"
+                              ],
+
+                              "declinesFrom": [
+                                "Betrayal",
+                                "Isolation",
+                                "ExtremeIndependence"
+                              ],
+
+                              "usedBySystems": [
+                                "MentalHealth",
+                                "Relationships",
+                                "Friendships",
+                                "Growth"
+                              ],
+
+                              "conflictsWith": [
+                                "ExtremeIndependence"
+                              ],
+
+                              "relationshipEffects": [
+                                "Opens up to friends",
+                                "Asks partners for support"
+                              ],
+
+                              "memoryEffects": [
+                                "Supportive memories increase trait",
+                                "Abandonment lowers trait"
+                              ]
+                            },
+
+                            {
+                              "name": "WorkFocus",
+                              "category": "Coping",
+                              "description": "Tendency to cope with stress and emotions through productivity and work.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "CareerPerformance": 0.70,
+                                "WorkHours": 0.60,
+                                "StressDistraction": 0.50
+                              },
+
+                              "growsFrom": [
+                                "CareerSuccess",
+                                "Responsibility",
+                                "Achievement"
+                              ],
+
+                              "declinesFrom": [
+                                "Burnout",
+                                "CareerFailure"
+                              ],
+
+                              "usedBySystems": [
+                                "Career",
+                                "MentalHealth",
+                                "DailyRoutine"
+                              ],
+
+                              "conflictsWith": [
+                                "Family",
+                                "WorkLifeBalance"
+                              ],
+
+                              "relationshipEffects": [
+                                "May neglect relationships",
+                                "Can become emotionally unavailable"
+                              ],
+
+                              "memoryEffects": [
+                                "Work success reinforces trait",
+                                "Burnout weakens trait"
+                              ]
+                            },
+
+                            {
+                              "name": "Avoidance",
+                              "category": "Coping",
+                              "description": "Tendency to avoid difficult situations, emotions, or decisions.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "DecisionDelay": 0.70,
+                                "ConflictAvoidance": 0.80,
+                                "StressReductionShortTerm": 0.40
+                              },
+
+                              "growsFrom": [
+                                "Trauma",
+                                "Anxiety",
+                                "Fear"
+                              ],
+
+                              "declinesFrom": [
+                                "Courage",
+                                "Confidence",
+                                "SupportiveRelationships"
+                              ],
+
+                              "usedBySystems": [
+                                "DecisionMaking",
+                                "Relationships",
+                                "MentalHealth"
+                              ],
+
+                              "conflictsWith": [
+                                "Discipline",
+                                "Courage"
+                              ],
+
+                              "relationshipEffects": [
+                                "Avoids difficult conversations",
+                                "Lets issues build over time"
+                              ],
+
+                              "memoryEffects": [
+                                "Painful memories increase avoidance"
+                              ]
+                            },
+
+                            {
+                              "name": "Family",
+                              "category": "Values",
+                              "description": "Importance placed on family relationships and family well-being.",
+                              "stability": "Very High",
+                              "growthPotential": "Low",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "FamilyPriority": 0.90,
+                                "ParentingEffort": 0.80,
+                                "RelationshipCommitment": 0.40
+                              },
+
+                              "growsFrom": [
+                                "PositiveFamilyExperiences",
+                                "Parenthood"
+                              ],
+
+                              "declinesFrom": [
+                                "FamilyTrauma",
+                                "FamilyAbandonment"
+                              ],
+
+                              "usedBySystems": [
+                                "Family",
+                                "Marriage",
+                                "Parenting",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Career",
+                                "Adventure"
+                              ],
+
+                              "relationshipEffects": [
+                                "Prioritizes family members",
+                                "Invests heavily in family bonds"
+                              ],
+
+                              "memoryEffects": [
+                                "Family memories carry extra weight"
+                              ]
+                            },
+
+                            {
+                              "name": "Love",
+                              "category": "Values",
+                              "description": "Importance placed on romance, connection, and meaningful relationships.",
+                              "stability": "Very High",
+                              "growthPotential": "Low",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "RelationshipPriority": 0.80,
+                                "DatingInterest": 0.60,
+                                "CommitmentSeeking": 0.50
+                              },
+
+                              "growsFrom": [
+                                "PositiveRelationships",
+                                "RomanticSuccess"
+                              ],
+
+                              "declinesFrom": [
+                                "RepeatedHeartbreak",
+                                "RelationshipTrauma"
+                              ],
+
+                              "usedBySystems": [
+                                "Dating",
+                                "Marriage",
+                                "Relationships"
+                              ],
+
+                              "conflictsWith": [
+                                "Career",
+                                "ExtremeIndependence"
+                              ],
+
+                              "relationshipEffects": [
+                                "Prioritizes close relationships"
+                              ],
+
+                              "memoryEffects": [
+                                "Romantic memories greatly influence trait"
+                              ]
+                            },
+
+                            {
+                              "name": "Career",
+                              "category": "Values",
+                              "description": "Importance placed on professional success and achievement.",
+                              "stability": "High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "PromotionSeeking": 0.80,
+                                "WorkHours": 0.60,
+                                "CareerPlanning": 0.90
+                              },
+
+                              "growsFrom": [
+                                "ProfessionalSuccess",
+                                "Recognition"
+                              ],
+
+                              "declinesFrom": [
+                                "Burnout",
+                                "CareerFailure"
+                              ],
+
+                              "usedBySystems": [
+                                "Career",
+                                "Finances",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Family",
+                                "Love"
+                              ],
+
+                              "relationshipEffects": [
+                                "May prioritize work over relationships"
+                              ],
+
+                              "memoryEffects": [
+                                "Career achievements strengthen trait"
+                              ]
+                            },
+
+                            {
+                              "name": "Money",
+                              "category": "Values",
+                              "description": "Importance placed on financial security, wealth, and income.",
+                              "stability": "High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "WealthSeeking": 0.80,
+                                "SavingBehavior": 0.50,
+                                "IncomePriority": 0.70
+                              },
+
+                              "growsFrom": [
+                                "Poverty",
+                                "FinancialSuccess",
+                                "SecurityConcerns"
+                              ],
+
+                              "declinesFrom": [
+                                "FinancialStability",
+                                "ValueShifts"
+                              ],
+
+                              "usedBySystems": [
+                                "Finances",
+                                "Career",
+                                "Lifestyle"
+                              ],
+
+                              "conflictsWith": [
+                                "Community",
+                                "Adventure"
+                              ],
+
+                              "relationshipEffects": [
+                                "May evaluate relationships through financial impact"
+                              ],
+
+                              "memoryEffects": [
+                                "Financial hardship memories strengthen trait"
+                              ]
+                            },
+
+                            {
+                              "name": "Security",
+                              "category": "Values",
+                              "description": "Importance placed on stability, predictability, and safety.",
+                              "stability": "Very High",
+                              "growthPotential": "Low",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "RiskAvoidance": 0.80,
+                                "LongTermPlanning": 0.70,
+                                "FinancialCaution": 0.60
+                              },
+
+                              "growsFrom": [
+                                "Trauma",
+                                "Instability",
+                                "Responsibility"
+                              ],
+
+                              "declinesFrom": [
+                                "AdventureSeeking",
+                                "RiskTakingSuccess"
+                              ],
+
+                              "usedBySystems": [
+                                "Finances",
+                                "Career",
+                                "Relationships",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "RiskTolerance",
+                                "Adventure"
+                              ],
+
+                              "relationshipEffects": [
+                                "Prefers stable relationships",
+                                "Avoids unnecessary risk"
+                              ],
+
+                              "memoryEffects": [
+                                "Unstable life events strengthen desire for security"
+                              ]
+                            },
+
+                            {
+                              "name": "Freedom",
+                              "category": "Values",
+                              "description": "Importance placed on independence, choice, and autonomy.",
+                              "stability": "High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "IndependenceSeeking": 0.80,
+                                "LifestyleFlexibility": 0.60,
+                                "CommitmentResistance": 0.30
+                              },
+
+                              "growsFrom": [
+                                "PersonalSuccess",
+                                "Independence",
+                                "Exploration"
+                              ],
+
+                              "declinesFrom": [
+                                "Dependence",
+                                "RestrictiveEnvironments"
+                              ],
+
+                              "usedBySystems": [
+                                "Lifestyle",
+                                "Relationships",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Commitment",
+                                "Family"
+                              ],
+
+                              "relationshipEffects": [
+                                "Needs personal space",
+                                "Values autonomy in relationships"
+                              ],
+
+                              "memoryEffects": [
+                                "Memories of being controlled strengthen freedom value"
+                              ]
+                            }
+
+                          ]
+                        }
+                        {
+                          "traits": [
+
+                            {
+                              "name": "Adventure",
+                              "category": "Values",
+                              "description": "Importance placed on excitement, exploration, novelty, and new experiences.",
+                              "stability": "Medium",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "ExplorationChance": 0.80,
+                                "TravelInterest": 0.70,
+                                "RiskTaking": 0.50,
+                                "NewExperienceSeeking": 0.90
+                              },
+
+                              "growsFrom": [
+                                "PositiveExperiences",
+                                "Travel",
+                                "Curiosity",
+                                "RiskTolerance"
+                              ],
+
+                              "declinesFrom": [
+                                "Trauma",
+                                "Fear",
+                                "SecuritySeeking"
+                              ],
+
+                              "usedBySystems": [
+                                "Exploration",
+                                "Travel",
+                                "Lifestyle",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "Security",
+                                "Routine",
+                                "RiskAvoidance"
+                              ],
+
+                              "relationshipEffects": [
+                                "Seeks exciting activities with partners",
+                                "May struggle with overly predictable relationships",
+                                "Encourages spontaneity"
+                              ],
+
+                              "memoryEffects": [
+                                "Positive adventure memories increase value",
+                                "Dangerous experiences may reduce value"
+                              ]
+                            },
+
+                            {
+                              "name": "Community",
+                              "category": "Values",
+                              "description": "Importance placed on belonging, contributing, and maintaining connections within groups and society.",
+                              "stability": "High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "CommunityParticipation": 0.90,
+                                "VolunteerInterest": 0.70,
+                                "SocialResponsibility": 0.60,
+                                "GroupLoyalty": 0.50
+                              },
+
+                              "growsFrom": [
+                                "PositiveSocialExperiences",
+                                "Friendships",
+                                "StrongCommunities"
+                              ],
+
+                              "declinesFrom": [
+                                "Isolation",
+                                "SocialRejection",
+                                "CommunityConflict"
+                              ],
+
+                              "usedBySystems": [
+                                "Community",
+                                "Friendships",
+                                "Reputation",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "ExtremeIndividualism",
+                                "Isolation"
+                              ],
+
+                              "relationshipEffects": [
+                                "Maintains larger social circles",
+                                "Supports friends and neighbors",
+                                "Values group belonging"
+                              ],
+
+                              "memoryEffects": [
+                                "Positive community memories strengthen value",
+                                "Social exclusion weakens value"
+                              ]
+                            },
+
+                            {
+                              "name": "Knowledge",
+                              "category": "Values",
+                              "description": "Importance placed on learning, understanding, discovery, and intellectual growth.",
+                              "stability": "High",
+                              "growthPotential": "High",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "LearningMotivation": 0.90,
+                                "SkillDevelopment": 0.70,
+                                "ResearchBehavior": 0.80,
+                                "CuriosityGrowth": 0.50
+                              },
+
+                              "growsFrom": [
+                                "Education",
+                                "Discovery",
+                                "Curiosity",
+                                "SuccessThroughLearning"
+                              ],
+
+                              "declinesFrom": [
+                                "IntellectualBurnout",
+                                "RigidThinking",
+                                "Disinterest"
+                              ],
+
+                              "usedBySystems": [
+                                "Education",
+                                "Career",
+                                "Skills",
+                                "Growth",
+                                "DecisionMaking"
+                              ],
+
+                              "conflictsWith": [
+                                "WillfulIgnorance",
+                                "ClosedMindedness"
+                              ],
+
+                              "relationshipEffects": [
+                                "Enjoys intellectual conversations",
+                                "Values learning from others",
+                                "May seek knowledgeable partners and friends"
+                              ],
+
+                              "memoryEffects": [
+                                "Discovery memories strengthen value",
+                                "Learning achievements reinforce value"
+                              ]
+                            },
+
+                            {
+                              "name": "FaithValue",
+                              "category": "Values",
+                              "description": "Importance placed on spiritual beliefs, religious practices, and faith-based principles.",
+                              "stability": "Very High",
+                              "growthPotential": "Medium",
+                              "defaultValue": 50,
+
+                              "effects": {
+                                "SpiritualPractice": 0.90,
+                                "MoralGuidance": 0.60,
+                                "Forgiveness": 0.30,
+                                "CommunityParticipation": 0.30
+                              },
+
+                              "growsFrom": [
+                                "SpiritualExperiences",
+                                "FaithCommunity",
+                                "PersonalReflection"
+                              ],
+
+                              "declinesFrom": [
+                                "SpiritualCrisis",
+                                "LossOfBelief",
+                                "NegativeReligiousExperiences"
+                              ],
+
+                              "usedBySystems": [
+                                "Values",
+                                "DecisionMaking",
+                                "Relationships",
+                                "Growth",
+                                "Community"
+                              ],
+
+                              "conflictsWith": [
+                                "Cynicism"
+                              ],
+
+                              "relationshipEffects": [
+                                "May seek partners with similar beliefs",
+                                "May place importance on shared values",
+                                "May encourage forgiveness and commitment"
+                              ],
+
+                              "memoryEffects": [
+                                "Spiritual memories carry greater weight",
+                                "Faith-based experiences strongly influence value"
+                              ]
+                            }
+
+                          
+                        

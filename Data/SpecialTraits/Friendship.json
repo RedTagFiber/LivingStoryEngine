@@ -1,0 +1,414 @@
+{
+  "version": "1.0",
+
+  "_categoryNotes": {
+    "category": "Friendship",
+    "purpose": "Traits that affect friendships, social circles, trust building, companionship, and social reputation.",
+    "maxPerCharacter": 3,
+    "positiveTraits": 10,
+    "negativeTraits": 10,
+    "totalTraits": 20
+  },
+
+  "traits": [
+
+    {
+      "name": "NaturalListener",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "People naturally feel comfortable opening up and sharing personal experiences.",
+      "rarity": "Uncommon",
+
+      "_traitPurpose": "Creates trustworthy friends who are easy to talk to.",
+      "_howItChangesCharacter": "Others frequently seek them out for advice and emotional support.",
+      "_designNotes": "Excellent trait for mentors, counselors, and trusted friends.",
+
+      "effects": {
+        "Empathy": 0.20,
+        "Approachability": 0.25,
+        "Trust": 0.15,
+        "FriendshipGrowth": 0.30
+      },
+
+      "_effectNotes": {
+        "Empathy": "Better understands others.",
+        "Approachability": "More people initiate conversations.",
+        "Trust": "Builds trust faster.",
+        "FriendshipGrowth": "Friendships deepen more rapidly."
+      },
+
+      "growsFrom": [
+        "Empathy",
+        "LifeExperience",
+        "SupportiveRelationships"
+      ],
+
+      "_growthNotes": "Often develops through helping others.",
+
+      "conflictsWith": [
+        "SelfCenteredness"
+      ],
+
+      "_conflictNotes": "Self-centered personalities rarely become listeners.",
+
+      "usedBySystems": [
+        "Friendships",
+        "Community",
+        "Relationships"
+      ],
+
+      "_systemNotes": "Frequently referenced when building friendships.",
+
+      "relationshipEffects": [
+        "Friends open up easily",
+        "Builds strong emotional trust"
+      ],
+
+      "_relationshipNotes": "Improves emotional bonds.",
+
+      "memoryEffects": [
+        "Remembers important conversations"
+      ],
+
+      "_memoryNotes": "Emotional discussions gain increased memory weight."
+    },
+
+    {
+      "name": "Peacemaker",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Naturally resolves conflicts and keeps people working together.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Empathy": 0.20,
+        "Patience": 0.20,
+        "Forgiveness": 0.25,
+        "ConflictResolution": 0.40
+      },
+
+      "growsFrom": [
+        "Empathy",
+        "Patience"
+      ],
+
+      "conflictsWith": [
+        "AlwaysRight",
+        "HoldsGrudges"
+      ],
+
+      "usedBySystems": [
+        "Friendships",
+        "Community",
+        "Relationships"
+      ],
+
+      "relationshipEffects": [
+        "Repairs damaged friendships",
+        "Reduces social conflict"
+      ],
+
+      "memoryEffects": [
+        "Conflict memories are processed more constructively"
+      ]
+    },
+
+    {
+      "name": "BigBrother",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Protective and supportive toward friends.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Protectiveness": 0.35,
+        "Loyalty": 0.30,
+        "Responsibility": 0.15
+      },
+
+      "growsFrom": [
+        "Responsibility",
+        "Family"
+      ],
+
+      "conflictsWith": [
+        "SelfInterest"
+      ],
+
+      "usedBySystems": [
+        "Friendships",
+        "Community"
+      ],
+
+      "relationshipEffects": [
+        "Frequently helps friends",
+        "Protects vulnerable people"
+      ],
+
+      "memoryEffects": [
+        "Supportive memories are highly valued"
+      ]
+    },
+
+    {
+      "name": "BigSister",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Nurturing and supportive toward friends and social groups.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Empathy": 0.25,
+        "Kindness": 0.20,
+        "Protectiveness": 0.25
+      },
+
+      "growsFrom": [
+        "Kindness",
+        "Family"
+      ],
+
+      "conflictsWith": [
+        "EmotionalDistance"
+      ],
+
+      "usedBySystems": [
+        "Friendships",
+        "Community"
+      ],
+
+      "relationshipEffects": [
+        "Creates strong emotional bonds"
+      ],
+
+      "memoryEffects": [
+        "Positive support memories gain weight"
+      ]
+    },
+
+    {
+      "name": "AlwaysThere",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Can be counted on when needed most.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Loyalty": 0.25,
+        "Trust": 0.20,
+        "Responsibility": 0.30
+      }
+    },
+
+    {
+      "name": "LifeOfTheParty",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Brings energy and excitement to social situations.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Charisma": 0.35,
+        "Sociability": 0.30,
+        "Humor": 0.20
+      }
+    },
+
+    {
+      "name": "Matchmaker",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Enjoys connecting people and building friendships.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Empathy": 0.15,
+        "Sociability": 0.25,
+        "Trust": 0.10
+      }
+    },
+
+    {
+      "name": "StoryTeller",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Captures attention through stories and experiences.",
+      "rarity": "Common",
+
+      "effects": {
+        "ConversationSkill": 0.30,
+        "Creativity": 0.20,
+        "Charisma": 0.15
+      }
+    },
+
+    {
+      "name": "LoyalCompanion",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Maintains friendships through both good and difficult times.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Loyalty": 0.40,
+        "Commitment": 0.20,
+        "Trust": 0.15
+      }
+    },
+
+    {
+      "name": "SocialConnector",
+      "category": "Friendship",
+      "alignment": "Positive",
+      "description": "Builds and maintains large social networks.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Sociability": 0.35,
+        "Charisma": 0.20,
+        "Approachability": 0.20
+      }
+    },
+
+    {
+      "name": "Gossip",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Frequently shares private information about others.",
+      "rarity": "Common",
+
+      "effects": {
+        "Trust": -0.40,
+        "Approachability": -0.10,
+        "Sociability": 0.10
+      }
+    },
+
+    {
+      "name": "FairWeatherFriend",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Only remains supportive during easy situations.",
+      "rarity": "Common",
+
+      "effects": {
+        "Loyalty": -0.40,
+        "Commitment": -0.20,
+        "Trust": -0.20
+      }
+    },
+
+    {
+      "name": "AttentionSeeker",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Frequently seeks attention and validation.",
+      "rarity": "Common",
+
+      "effects": {
+        "NeedForApproval": 0.40,
+        "Confidence": -0.10,
+        "Sociability": 0.15
+      }
+    },
+
+    {
+      "name": "SocialClimber",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Forms relationships mainly for personal gain.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Trust": -0.30,
+        "Loyalty": -0.25,
+        "NeedForApproval": 0.20
+      }
+    },
+
+    {
+      "name": "DramaMagnet",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Frequently becomes involved in social conflicts.",
+      "rarity": "Common",
+
+      "effects": {
+        "Anxiety": 0.20,
+        "ConflictResolution": -0.20,
+        "Sociability": 0.10
+      }
+    },
+
+    {
+      "name": "TrustBreaker",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Has a history of betraying confidence or trust.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Trust": -0.50,
+        "Honesty": -0.30,
+        "Loyalty": -0.20
+      }
+    },
+
+    {
+      "name": "OneUpper",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Always tries to outperform or top others' achievements.",
+      "rarity": "Common",
+
+      "effects": {
+        "Empathy": -0.20,
+        "NeedForApproval": 0.20,
+        "Confidence": 0.10
+      }
+    },
+
+    {
+      "name": "FlakyFriend",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Frequently cancels plans or fails to follow through.",
+      "rarity": "Common",
+
+      "effects": {
+        "Responsibility": -0.30,
+        "Trust": -0.20,
+        "Commitment": -0.15
+      }
+    },
+
+    {
+      "name": "ConversationHijacker",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Regularly redirects conversations toward themselves.",
+      "rarity": "Common",
+
+      "effects": {
+        "Empathy": -0.20,
+        "ConversationSkill": -0.15,
+        "NeedForApproval": 0.25
+      }
+    },
+
+    {
+      "name": "Cliquish",
+      "category": "Friendship",
+      "alignment": "Negative",
+      "description": "Prefers exclusive groups and excludes outsiders.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Approachability": -0.30,
+        "Community": -0.25,
+        "Trust": -0.10
+      }
+    }
+
+  ]
+}

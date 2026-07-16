@@ -4,6 +4,8 @@ using LivingStoryEngine.Money;
 using LivingStoryEngine.Relationshipsystems;
 using LivingStoryEngine.Systems;
 using LivingStoryEngine.Player;
+using LivingStoryEngine.Characters;
+using LivingStoryEngine.Managers;
 public class Character
 {
     public string Name { get; set; } = "";
@@ -33,9 +35,23 @@ public class Character
     public string JournalEntry { get; set; } = "";
 
     public string RelationshipStatus { get; set; } = "Friend";
-
+    public List<string> SpecialTraits { get; set; } = new();
     public string Location { get; set; } = "";
-
+    public Dictionary<string, double> TraitModifiers
+    {
+        get;
+        set;
+    } = new();
+    public double GetModifier(string stat)
+    {
+        return TraitModifiers.TryGetValue(stat, out var value)
+            ? value
+            : 0.0;
+    }
+    public bool HasTrait(string traitName)
+    {
+        return SpecialTraits.Contains(traitName);
+    }
     public int Happiness { get; set; } = 50;
     public int Love { get; set; } = 0;
     public string LoveStatus { get; set; } = "Stranger";

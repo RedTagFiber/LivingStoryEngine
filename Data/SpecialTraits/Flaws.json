@@ -1,0 +1,357 @@
+{
+  "version": "1.0",
+
+  "_categoryNotes": {
+    "category": "Flaw",
+    "purpose": "Negative personality traits that create weaknesses, personal struggles, character flaws, poor decisions, and interpersonal challenges.",
+    "maxPerCharacter": 5,
+    "positiveTraits": 0,
+    "negativeTraits": 20,
+    "totalTraits": 20
+  },
+
+  "traits": [
+
+    {
+      "name": "Overthinker",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Analyzes situations excessively, making decisions more difficult.",
+      "rarity": "Common",
+
+      "_traitPurpose": "Creates hesitation and second-guessing.",
+
+      "_howItChangesCharacter": "Spends excessive time evaluating choices.",
+
+      "_designNotes": "Common flaw for intelligent characters.",
+
+      "effects": {
+        "Reflection": 0.25,
+        "Anxiety": 0.25,
+        "Confidence": -0.15,
+        "DecisionDelay": 0.40
+      },
+
+      "_effectNotes": {
+        "Reflection": "More analysis.",
+        "Anxiety": "Increased worry.",
+        "DecisionDelay": "Longer decision time."
+      },
+
+      "growsFrom": [
+        "Anxiety",
+        "FearOfFailure"
+      ],
+
+      "_growthNotes": "Develops through repeated uncertainty.",
+
+      "conflictsWith": [
+        "Decisiveness"
+      ],
+
+      "_conflictNotes": "Quick decision makers rarely overthink.",
+
+      "usedBySystems": [
+        "DecisionMaking",
+        "Relationships",
+        "Career"
+      ],
+
+      "_systemNotes": "Frequently slows choices.",
+
+      "relationshipEffects": [
+        "Overanalyzes conversations",
+        "Questions relationship stability"
+      ],
+
+      "_relationshipNotes": "May create unnecessary concerns.",
+
+      "memoryEffects": [
+        "Negative memories replay repeatedly"
+      ],
+
+      "_memoryNotes": "Embarrassing events linger longer."
+    },
+
+    {
+      "name": "PeoplePleaser",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Prioritizes others' approval over personal needs.",
+      "rarity": "Common",
+
+      "effects": {
+        "NeedForApproval": 0.50,
+        "Confidence": -0.20,
+        "SelfEsteem": -0.15
+      },
+
+      "growsFrom": [
+        "Rejection",
+        "LowConfidence"
+      ],
+
+      "conflictsWith": [
+        "Independence"
+      ],
+
+      "usedBySystems": [
+        "Relationships",
+        "Social"
+      ]
+    },
+
+    {
+      "name": "AvoidsConflict",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Avoids difficult conversations and disagreements.",
+      "rarity": "Common",
+
+      "effects": {
+        "Avoidance": 0.40,
+        "Courage": -0.20,
+        "ConflictResolution": -0.20
+      }
+    },
+
+    {
+      "name": "Procrastinator",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Delays tasks, responsibilities, and decisions.",
+      "rarity": "Common",
+
+      "effects": {
+        "Discipline": -0.40,
+        "Responsibility": -0.20,
+        "Avoidance": 0.25
+      }
+    },
+
+    {
+      "name": "FearOfRejection",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Strongly fears social and romantic rejection.",
+      "rarity": "Common",
+
+      "effects": {
+        "Confidence": -0.30,
+        "NeedForApproval": 0.30,
+        "Trust": -0.15,
+        "Anxiety": 0.20
+      }
+    },
+
+    {
+      "name": "ControlFreak",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Needs excessive control over people and situations.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Trust": -0.20,
+        "Anxiety": 0.20,
+        "Adaptability": -0.20
+      }
+    },
+
+    {
+      "name": "HoldsGrudges",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Struggles to forgive mistakes and offenses.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Forgiveness": -0.50,
+        "Trust": -0.15,
+        "Jealousy": 0.10
+      }
+    },
+
+    {
+      "name": "ImpulseBuyer",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Makes spending decisions without planning.",
+      "rarity": "Common",
+
+      "effects": {
+        "Money": -0.25,
+        "Discipline": -0.15,
+        "RiskTolerance": 0.15
+      }
+    },
+
+    {
+      "name": "AlwaysRight",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Has difficulty admitting mistakes or accepting criticism.",
+      "rarity": "Common",
+
+      "effects": {
+        "SelfAwareness": -0.25,
+        "Empathy": -0.15,
+        "Confidence": 0.10
+      }
+    },
+
+    {
+      "name": "SelfCritical",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Judges personal mistakes harshly.",
+      "rarity": "Common",
+
+      "effects": {
+        "SelfEsteem": -0.40,
+        "Anxiety": 0.20,
+        "Confidence": -0.15
+      }
+    },
+
+    {
+      "name": "Pessimist",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Expects negative outcomes more often than positive ones.",
+      "rarity": "Common",
+
+      "effects": {
+        "Optimism": -0.50,
+        "Hopefulness": -0.30
+      }
+    },
+
+    {
+      "name": "Jealous",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Frequently compares themselves to others.",
+      "rarity": "Common",
+
+      "effects": {
+        "Jealousy": 0.50,
+        "Trust": -0.15,
+        "SelfEsteem": -0.10
+      }
+    },
+
+    {
+      "name": "Lazy",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Avoids effort whenever possible.",
+      "rarity": "Common",
+
+      "effects": {
+        "Discipline": -0.50,
+        "Determination": -0.25,
+        "WorkFocus": -0.30
+      }
+    },
+
+    {
+      "name": "Manipulative",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Uses deception or influence for personal gain.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Honesty": -0.50,
+        "Trust": -0.35,
+        "Charisma": 0.15
+      }
+    },
+
+    {
+      "name": "AttentionSeeking",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Constantly seeks validation and recognition.",
+      "rarity": "Common",
+
+      "effects": {
+        "NeedForApproval": 0.50,
+        "Confidence": -0.10,
+        "SelfEsteem": -0.10
+      }
+    },
+
+    {
+      "name": "Vindictive",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Seeks revenge when wronged.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Forgiveness": -0.40,
+        "Empathy": -0.20,
+        "Jealousy": 0.15
+      }
+    },
+
+    {
+      "name": "Paranoid",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Frequently suspects hidden motives or threats.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Trust": -0.50,
+        "Anxiety": 0.35,
+        "Confidence": -0.10
+      }
+    },
+
+    {
+      "name": "Stubborn",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Resists changing opinions or behaviors.",
+      "rarity": "Common",
+
+      "effects": {
+        "Adaptability": -0.40,
+        "SelfAwareness": -0.15,
+        "Determination": 0.15
+      }
+    },
+
+    {
+      "name": "ShortTempered",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Becomes frustrated or angry easily.",
+      "rarity": "Common",
+
+      "effects": {
+        "Patience": -0.50,
+        "EmotionalControl": -0.30,
+        "Anxiety": 0.10
+      }
+    },
+
+    {
+      "name": "Dishonest",
+      "category": "Flaw",
+      "alignment": "Negative",
+      "description": "Frequently lies, exaggerates, or hides the truth.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Honesty": -0.60,
+        "Trust": -0.40,
+        "Loyalty": -0.15
+      }
+    }
+
+  ]
+}

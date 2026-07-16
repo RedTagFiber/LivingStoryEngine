@@ -1,0 +1,391 @@
+{
+  "version": "1.0",
+
+  "_categoryNotes": {
+    "category": "Relationship",
+    "purpose": "Traits that affect dating, romance, emotional attachment, marriage, trust, commitment, and relationship stability.",
+    "maxPerCharacter": 3,
+    "positiveTraits": 10,
+    "negativeTraits": 10,
+    "totalTraits": 20
+  },
+
+  "traits": [
+
+    {
+      "name": "HopelessRomantic",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Strongly believes in love, romance, and finding a lifelong partner.",
+      "rarity": "Uncommon",
+
+      "_traitPurpose": "Creates characters who highly value romance.",
+
+      "_howItChangesCharacter": "Actively seeks meaningful romantic relationships.",
+
+      "_designNotes": "Excellent for romance-focused stories.",
+
+      "effects": {
+        "Romanticism": 0.40,
+        "Love": 0.20,
+        "Commitment": 0.20,
+        "NeedForConnection": 0.15
+      },
+
+      "_effectNotes": {
+        "Romanticism": "Values romance more strongly.",
+        "Commitment": "More willing to invest in relationships."
+      },
+
+      "growsFrom": [
+        "PositiveRelationships",
+        "Love",
+        "Affection"
+      ],
+
+      "_growthNotes": "Often develops after healthy romantic experiences.",
+
+      "conflictsWith": [
+        "FearOfCommitment",
+        "EmotionallyDistant"
+      ],
+
+      "_conflictNotes": "Requires emotional openness.",
+
+      "usedBySystems": [
+        "Dating",
+        "Marriage",
+        "Relationships"
+      ],
+
+      "_systemNotes": "Strong influence on romantic decisions.",
+
+      "relationshipEffects": [
+        "Invests deeply in relationships",
+        "More likely to pursue romance"
+      ],
+
+      "_relationshipNotes": "Increases romantic effort.",
+
+      "memoryEffects": [
+        "Romantic memories gain additional importance"
+      ],
+
+      "_memoryNotes": "Love-related memories become defining experiences."
+    },
+
+    {
+      "name": "SoulSeeker",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Searches for deep emotional and spiritual connections.",
+      "rarity": "Rare",
+
+      "effects": {
+        "NeedForConnection": 0.35,
+        "Trust": 0.15,
+        "Reflection": 0.15,
+        "Commitment": 0.15
+      },
+
+      "growsFrom": [
+        "Reflection",
+        "Love"
+      ],
+
+      "conflictsWith": [
+        "SerialDater"
+      ],
+
+      "usedBySystems": [
+        "Dating",
+        "Marriage"
+      ],
+
+      "relationshipEffects": [
+        "Avoids shallow relationships"
+      ],
+
+      "memoryEffects": [
+        "Meaningful memories carry extra weight"
+      ]
+    },
+
+    {
+      "name": "FaithfulPartner",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Strongly committed to loyalty and faithfulness.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Loyalty": 0.45,
+        "Commitment": 0.30,
+        "Trust": 0.20
+      },
+
+      "growsFrom": [
+        "Trust",
+        "Loyalty"
+      ],
+
+      "conflictsWith": [
+        "SerialDater"
+      ],
+
+      "usedBySystems": [
+        "Relationships",
+        "Marriage"
+      ],
+
+      "relationshipEffects": [
+        "Rarely betrays partners"
+      ],
+
+      "memoryEffects": [
+        "Relationship commitments become important memories"
+      ]
+    },
+
+    {
+      "name": "Affectionate",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Openly expresses care, appreciation, and affection.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Affection": 0.40,
+        "Trust": 0.10,
+        "Empathy": 0.15
+      }
+    },
+
+    {
+      "name": "EmotionallyAvailable",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Comfortable sharing thoughts, feelings, and vulnerabilities.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Trust": 0.25,
+        "Affection": 0.20,
+        "Empathy": 0.20,
+        "Commitment": 0.10
+      }
+    },
+
+    {
+      "name": "PatientPartner",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Gives relationships time to grow and endure challenges.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Patience": 0.40,
+        "Forgiveness": 0.25,
+        "Commitment": 0.15
+      }
+    },
+
+    {
+      "name": "RelationshipBuilder",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Actively works to improve and strengthen relationships.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Commitment": 0.25,
+        "Forgiveness": 0.20,
+        "Empathy": 0.15,
+        "Trust": 0.15
+      }
+    },
+
+    {
+      "name": "HeartOnSleeve",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Expresses emotions openly and honestly.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Affection": 0.35,
+        "Sensitivity": 0.20,
+        "Trust": 0.10
+      }
+    },
+
+    {
+      "name": "RideOrDie",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Extremely loyal and dedicated to loved ones.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Loyalty": 0.50,
+        "Commitment": 0.40,
+        "Protectiveness": 0.25
+      }
+    },
+
+    {
+      "name": "OldFashioned",
+      "category": "Relationship",
+      "alignment": "Positive",
+      "description": "Values traditional relationship ideals and long-term commitment.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Commitment": 0.30,
+        "Family": 0.20,
+        "FaithValue": 0.15
+      }
+    },
+
+    {
+      "name": "FearOfCommitment",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Avoids serious long-term romantic commitments.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Commitment": -0.50,
+        "Freedom": 0.20,
+        "Trust": -0.10
+      }
+    },
+
+    {
+      "name": "GuardedHeart",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Slow to trust and emotionally open up.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Trust": -0.35,
+        "Affection": -0.15,
+        "NeedForConnection": -0.10
+      }
+    },
+
+    {
+      "name": "SerialDater",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Frequently enters and exits relationships.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Romanticism": 0.15,
+        "Commitment": -0.25,
+        "Love": -0.10
+      }
+    },
+
+    {
+      "name": "JealousLover",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Highly sensitive to perceived romantic threats.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Jealousy": 0.50,
+        "Trust": -0.20,
+        "Anxiety": 0.10
+      }
+    },
+
+    {
+      "name": "Possessive",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Attempts to control who loved ones spend time with.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Jealousy": 0.35,
+        "Trust": -0.30,
+        "Protectiveness": 0.20
+      }
+    },
+
+    {
+      "name": "EmotionallyDistant",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Has difficulty sharing emotions and connecting deeply.",
+      "rarity": "Common",
+
+      "effects": {
+        "Affection": -0.35,
+        "Trust": -0.15,
+        "Empathy": -0.10
+      }
+    },
+
+    {
+      "name": "LoveBomber",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Overwhelms partners with excessive affection early in relationships.",
+      "rarity": "Uncommon",
+
+      "effects": {
+        "Affection": 0.25,
+        "NeedForApproval": 0.35,
+        "Commitment": -0.15
+      }
+    },
+
+    {
+      "name": "ControllingPartner",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Attempts to influence or control partner decisions.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Trust": -0.40,
+        "Empathy": -0.20,
+        "Jealousy": 0.20
+      }
+    },
+
+    {
+      "name": "TrustIssues",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Finds it difficult to trust romantic partners.",
+      "rarity": "Common",
+
+      "effects": {
+        "Trust": -0.50,
+        "Anxiety": 0.20,
+        "Commitment": -0.10
+      }
+    },
+
+    {
+      "name": "CommitmentPhobic",
+      "category": "Relationship",
+      "alignment": "Negative",
+      "description": "Experiences anxiety or fear when relationships become serious.",
+      "rarity": "Rare",
+
+      "effects": {
+        "Commitment": -0.45,
+        "Anxiety": 0.20,
+        "NeedForConnection": -0.10
+      }
+    }
+
+  ]
+}
