@@ -30,7 +30,7 @@ public class Character
     public string Want { get; set; } = "";
 
     public string CurrentDecision { get; set; } = "";
-
+    public int DatesCompleted { get; set; }
     public string Thought { get; set; } = "";
     public string JournalEntry { get; set; } = "";
 
@@ -68,7 +68,8 @@ public class Character
     public Appearance Appearance { get; set; } = new();
     public int Attractiveness { get; set; } = 50;
     public int Charisma { get; set; } = 50;
-
+   
+    public int TrustLevel { get; set; } = 50;
     public int Confidence { get; set; } = 50;
 
     public int Maturity { get; set; } = 50;
@@ -92,25 +93,25 @@ public class Character
 
     public void UpdateRelationshipStatus()
     {
-        if (Trust >= 80)
+        if (Love >= 90)
         {
-            RelationshipStatus = "Best Friend";
+            RelationshipStatus = "Soulmates";
         }
-        else if (Trust >= 60)
+        else if (Love >= 75)
         {
-            RelationshipStatus = "Close Friend";
+            RelationshipStatus = "Dating";
         }
-        else if (Trust >= 40)
+        else if (Love >= 50)
         {
-            RelationshipStatus = "Friend";
+            RelationshipStatus = "Interested";
         }
-        else if (Trust >= 20)
+        else if (Love >= 25)
         {
-            RelationshipStatus = "Acquaintance";
+            RelationshipStatus = "Friends";
         }
         else
         {
-            RelationshipStatus = "Stranger";
+            RelationshipStatus = "Strangers";
         }
     }
 
