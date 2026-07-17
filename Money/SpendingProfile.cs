@@ -1,4 +1,4 @@
-﻿namespace LivingStoryEngine.Systems;
+﻿namespace LivingStoryEngine.Money;
 
 public class SpendingProfile
 {

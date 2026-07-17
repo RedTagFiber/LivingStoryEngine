@@ -1,0 +1,3875 @@
+[
+  // =====================================================
+  // HISTORY EVENTS DATABASE
+  // =====================================================
+  //
+  // STRUCTURE
+  //
+  // name        = Event Name
+  // category    = Event Category
+  // polarity    = Event Polarity (Positive/Negative/Neutral= NO effect )
+  // minAge      = Minimum Age
+  // maxAge      = Maximum Age
+  // weight      = Spawn Chance
+  // description = History Text
+  // traits      = Traits Granted
+  //
+  // Goal:
+  // 30 Positive/Neutral Events
+  // 10 Negative Events
+  // Per Category
+  //
+  // Categories:
+  //
+  // 1. Family
+  // 2. Childhood
+  // 3. School
+  // 4. Teen
+  // 5. Relationship
+  // 6. Career
+  // 7. Travel
+  // 8. Adult
+  // 9. Senior
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // FAMILY
+  //
+  // Ages: 5 - 18
+  //
+  // Positive Events:
+  // Grant positive traits and bonuses.
+  //
+  // Neutral Events:
+  // Story/history only.
+  // Grants NO traits.
+  //
+  // Negative Events:
+  // Adversity, hardship, trauma,
+  // instability, conflict, loss.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // FAMILY - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Supportive Family",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Grew up in a loving and supportive household.",
+    "traits": [
+      "Trust",
+      "Optimism",
+      "Kindness"
+    ]
+  },
+  {
+    "name": "Encouraging Parents",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Parents encouraged personal growth and achievement.",
+    "traits": [
+      "Confidence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Large Family",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Grew up surrounded by many siblings and relatives.",
+    "traits": [
+      "Family",
+      "Community"
+    ]
+  },
+  {
+    "name": "Close Knit Family",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Family members remained close and supportive.",
+    "traits": [
+      "Family",
+      "Trust"
+    ]
+  },
+  {
+    "name": "Religious Household",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Raised with strong faith and traditions.",
+    "traits": [
+      "FaithValue",
+      "Community"
+    ]
+  },
+  {
+    "name": "Family Business",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Helped and learned from a family-owned business.",
+    "traits": [
+      "Career",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Grandparents Raised",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Raised primarily by grandparents.",
+    "traits": [
+      "Family",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Family Vacation Tradition",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Family regularly took memorable vacations.",
+    "traits": [
+      "Adventure",
+      "Family"
+    ]
+  },
+  {
+    "name": "Mentor Parent",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "One parent acted as a strong mentor.",
+    "traits": [
+      "Knowledge",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Family Celebrated Achievements",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Achievements were recognized and celebrated.",
+    "traits": [
+      "Confidence",
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Strong Sibling Bond",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Developed a close relationship with siblings.",
+    "traits": [
+      "Trust",
+      "Community"
+    ]
+  },
+  {
+    "name": "Family Volunteered Together",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Family frequently participated in community service.",
+    "traits": [
+      "Kindness",
+      "Community"
+    ]
+  },
+  {
+    "name": "Financially Stable Family",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Never worried much about money growing up.",
+    "traits": [
+      "Security",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Family Encouraged Education",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Education was highly valued in the household.",
+    "traits": [
+      "Knowledge",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "Military Family",
+    "category": "Family",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Raised in a military household.",
+    "traits": [
+      "Discipline",
+      "Adaptability"
+    ]
+  },
+
+  // =====================================================
+  // FAMILY - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Only Child",
+    "category": "Family",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Grew up without siblings.",
+    "traits": []
+  },
+  {
+    "name": "City Family",
+    "category": "Family",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Raised in a city environment.",
+    "traits": []
+  },
+  {
+    "name": "Rural Family",
+    "category": "Family",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Raised in a rural community.",
+    "traits": []
+  },
+  {
+    "name": "Family Farm",
+    "category": "Family",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Spent childhood around a family farm.",
+    "traits": []
+  },
+  {
+    "name": "Family Restaurant",
+    "category": "Family",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Family operated a restaurant.",
+    "traits": []
+  }, // =====================================================
+  // FAMILY - NEGATIVE
+  // =====================================================
+
+  {
+    "name": "Parents Divorced",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Experienced parents separating during childhood.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Foster Care",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 2,
+    "description": "Spent part of childhood in foster care.",
+    "traits": [
+      "Independence",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Lost Parent Young",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 1,
+    "description": "Lost a parent during childhood.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Family Financial Problems",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Experienced financial struggles while growing up.",
+    "traits": [
+      "Money",
+      "Security"
+    ]
+  },
+  {
+    "name": "Absent Father",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Grew up with little or no involvement from a father figure.",
+    "traits": [
+      "Independence",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Absent Mother",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Grew up with little or no involvement from a mother figure.",
+    "traits": [
+      "Independence",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Troubled Home",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Experienced frequent household conflict and instability.",
+    "traits": [
+      "Resilience",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Family Moved Frequently",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Changed homes and communities many times during childhood.",
+    "traits": [
+      "Adaptability",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Family Scandal",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 8,
+    "maxAge": 18,
+    "weight": 1,
+    "description": "A major public family controversy impacted childhood.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Sibling Rivalry",
+    "category": "Family",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Had frequent conflict and competition with siblings.",
+    "traits": [
+      "Determination",
+      "Reflection"
+    ] // =====================================================
+    // CHILDHOOD
+    //
+    // Ages: 5 - 12
+    //
+    // Positive Events:
+    // Build confidence, curiosity, kindness,
+    // friendships, creativity, hobbies.
+    //
+    // Neutral Events:
+    // Story/history only.
+    // Grants NO traits.
+    //
+    // Negative Events:
+    // Bullying, loneliness, loss,
+    // instability, struggles.
+    //
+    // Goal:
+    // 15 Positive
+    // 15 Neutral
+    // 10 Negative
+    //
+    // Total:
+    // 40 Events
+    //
+    // =====================================================
+  }, // =====================================================
+  // CHILDHOOD - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Got First Pet",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 8,
+    "description": "Received a beloved childhood pet.",
+    "traits": [
+      "Kindness",
+      "Empathy"
+    ]
+  },
+  {
+    "name": "Made Best Friend",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 10,
+    "description": "Formed a close childhood friendship.",
+    "traits": [
+      "Trust",
+      "Community"
+    ]
+  },
+  {
+    "name": "Learned To Swim",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 7,
+    "description": "Learned how to swim.",
+    "traits": [
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Learned To Ride A Bike",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 8,
+    "description": "Learned to ride a bicycle.",
+    "traits": [
+      "Confidence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Started Playing Music",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 6,
+    "maxAge": 12,
+    "weight": 6,
+    "description": "Began learning a musical instrument.",
+    "traits": [
+      "Knowledge",
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Won School Competition",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 7,
+    "maxAge": 12,
+    "weight": 5,
+    "description": "Won an academic or school competition.",
+    "traits": [
+      "Confidence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Joined Sports Team",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 7,
+    "maxAge": 12,
+    "weight": 7,
+    "description": "Joined a local sports team.",
+    "traits": [
+      "Community",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Loved Reading",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 8,
+    "description": "Developed a strong love of books.",
+    "traits": [
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Started Drawing",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 6,
+    "description": "Developed an interest in art.",
+    "traits": [
+      "Creativity"
+    ]
+  },
+  {
+    "name": "Learned Coding Young",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 8,
+    "maxAge": 12,
+    "weight": 2,
+    "description": "Began programming at a young age.",
+    "traits": [
+      "Knowledge",
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Scout Troop Member",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 7,
+    "maxAge": 12,
+    "weight": 5,
+    "description": "Participated in scouting activities.",
+    "traits": [
+      "Community",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "Family Camping Trips",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 5,
+    "description": "Frequently went camping with family.",
+    "traits": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Started Gardening",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 6,
+    "maxAge": 12,
+    "weight": 4,
+    "description": "Enjoyed helping grow plants and flowers.",
+    "traits": [
+      "Patience"
+    ]
+  },
+  {
+    "name": "Won Art Contest",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 6,
+    "maxAge": 12,
+    "weight": 2,
+    "description": "Received recognition for artistic talent.",
+    "traits": [
+      "Confidence",
+      "Creativity"
+    ]
+  },
+  {
+    "name": "Neighborhood Leader",
+    "category": "Childhood",
+    "polarity": "Positive",
+    "minAge": 7,
+    "maxAge": 12,
+    "weight": 3,
+    "description": "Often organized neighborhood activities.",
+    "traits": [
+      "Confidence",
+      "Leadership"
+    ]
+  }, // =====================================================
+  // CHILDHOOD - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Moved To New Town",
+    "category": "Childhood",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 8,
+    "description": "Moved to a new town during childhood.",
+    "traits": []
+  },
+  {
+    "name": "Family Vacation",
+    "category": "Childhood",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 8,
+    "description": "Took a memorable family vacation.",
+    "traits": []
+  },
+  {
+    "name": "Attended Summer Camp",
+    "category": "Childhood",
+    "polarity": "Neutral",
+    "minAge": 6,
+    "maxAge": 12,
+    "weight": 6,
+    "description": "Spent time at a summer camp.",
+    "traits": []
+  },
+  {
+    "name": "Collected Trading Cards",
+    "category": "Childhood",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 5,
+    "description": "Enjoyed collecting trading cards.",
+    "traits": []
+  },
+  {
+    "name": "Visited Grandparents Often",
+    "category": "Childhood",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 6,
+    "description": "Spent a lot of time with grandparents.",
+    "traits": []
+  }, // =====================================================
+  // CHILDHOOD - NEGATIVE
+  // =====================================================
+
+  {
+    "name": "Bullied At School",
+    "category": "Childhood",
+    "polarity": "Negative",
+    "minAge": 7,
+    "maxAge": 12,
+    "weight": 4,
+    "description": "Experienced bullying from classmates.",
+    "traits": [
+      "Resilience",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Lost Pet",
+    "category": "Childhood",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 4,
+    "description": "Lost a beloved childhood pet.",
+    "traits": [
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Lost Best Friend",
+    "category": "Childhood",
+    "polarity": "Negative",
+    "minAge": 6,
+    "maxAge": 12,
+    "weight": 3,
+    "description": "Lost contact with a close friend.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Frequent School Changes",
+    "category": "Childhood",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 3,
+    "description": "Changed schools multiple times.",
+    "traits": [
+      "Adaptability",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Childhood Illness",
+    "category": "Childhood",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 12,
+    "weight": 2,
+    "description": "Experienced a serious illness as a child.",
+    "traits": [
+      "Resilience"
+    ]
+  }, // =====================================================
+  // SCHOOL
+  //
+  // Ages: 13 - 18
+  //
+  // Positive Events:
+  // Achievement, clubs, leadership,
+  // learning, competition, growth.
+  //
+  // Neutral Events:
+  // School experiences that help
+  // build history but grant NO traits.
+  //
+  // Negative Events:
+  // Failure, bullying, isolation,
+  // academic struggles, discipline.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // SCHOOL - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Honor Student",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Maintained excellent academic performance.",
+    "traits": [
+      "Discipline",
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Class President",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Served as class president.",
+    "traits": [
+      "Leadership",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Drama Club",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Participated in theater and stage performances.",
+    "traits": [
+      "Confidence",
+      "Community"
+    ]
+  },
+  {
+    "name": "Science Club",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Spent time exploring scientific interests.",
+    "traits": [
+      "Knowledge",
+      "Curiosity"
+    ]
+  },
+  {
+    "name": "Debate Team",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Participated in organized debates.",
+    "traits": [
+      "Confidence",
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Chess Club",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Competed in chess and strategy games.",
+    "traits": [
+      "Knowledge",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Won Scholarship",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 16,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Earned a scholarship through achievement.",
+    "traits": [
+      "Determination",
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Math Team",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Competed in mathematics competitions.",
+    "traits": [
+      "Knowledge",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "School Newspaper",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Helped write for the school newspaper.",
+    "traits": [
+      "Knowledge",
+      "Community"
+    ]
+  },
+  {
+    "name": "Volunteer Club",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Participated in volunteer activities.",
+    "traits": [
+      "Kindness",
+      "Community"
+    ]
+  },
+  {
+    "name": "Student Mentor",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Helped younger students succeed.",
+    "traits": [
+      "Kindness",
+      "Leadership"
+    ]
+  },
+  {
+    "name": "Art Competition Winner",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Won recognition for artistic talent.",
+    "traits": [
+      "Creativity",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Academic Team Captain",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Led an academic competition team.",
+    "traits": [
+      "Leadership",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Perfect Attendance",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Maintained nearly perfect attendance.",
+    "traits": [
+      "Discipline"
+    ]
+  },
+  {
+    "name": "Teacher's Favorite",
+    "category": "School",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Earned strong respect from teachers.",
+    "traits": [
+      "Confidence",
+      "Knowledge"
+    ]
+  },
+
+  // =====================================================
+  // SCHOOL - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Average Student",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Had a typical school experience.",
+    "traits": []
+  },
+  {
+    "name": "Band Member",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Participated in the school band.",
+    "traits": []
+  },
+  {
+    "name": "Yearbook Staff",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Worked on the yearbook team.",
+    "traits": []
+  },
+  {
+    "name": "Computer Club",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Spent time in the computer club.",
+    "traits": []
+  },
+  {
+    "name": "School Spirit Committee",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Helped organize school events.",
+    "traits": []
+  },
+  {
+    "name": "School Dances",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Regularly attended school dances.",
+    "traits": []
+  },
+  {
+    "name": "Lunch Table Regular",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Spent most lunches with the same group.",
+    "traits": []
+  },
+  {
+    "name": "School Transfer",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Transferred schools during education years.",
+    "traits": []
+  },
+  {
+    "name": "School Field Trips",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Participated in educational field trips.",
+    "traits": []
+  },
+  {
+    "name": "Locker Neighbor Friendship",
+    "category": "School",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Became friends with nearby classmates.",
+    "traits": []
+  }, // =====================================================
+  // SCHOOL - NEGATIVE
+  //
+  // Failure
+  // Bullying
+  // Isolation
+  // Academic setbacks
+  // Discipline issues
+  //
+  // Goal:
+  // 10 Events
+  // =====================================================
+  {
+    "name": "Bullied Student",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Experienced ongoing bullying from classmates.",
+    "traits": [
+      "Resilience",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Failed Important Exam",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Failed a major academic exam.",
+    "traits": [
+      "Determination",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Academic Probation",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Grades dropped low enough to face academic consequences.",
+    "traits": [
+      "Reflection",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "School Suspension",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Received a suspension from school.",
+    "traits": [
+      "Reflection",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Social Isolation",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Struggled to fit in with peers.",
+    "traits": [
+      "Reflection",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Lost Scholarship",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 18,
+    "weight": 1,
+    "description": "Lost an academic scholarship opportunity.",
+    "traits": [
+      "Determination",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Teacher Conflict",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Frequently clashed with a teacher.",
+    "traits": [
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Public Embarrassment",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Experienced a memorable public embarrassment at school.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Dropped Out",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 18,
+    "weight": 1,
+    "description": "Left school before graduating.",
+    "traits": [
+      "Independence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Lost Best Friend",
+    "category": "School",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "A close school friendship ended.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  }, // =====================================================
+  // TEEN
+  //
+  // Ages: 13 - 18
+  //
+  // Positive Events:
+  // Building independence, confidence,
+  // friendships, dating, hobbies,
+  // achievements, and first jobs.
+  //
+  // Neutral Events:
+  // Life experiences and memories.
+  // Grants NO traits.
+  //
+  // Negative Events:
+  // Rejection, failure, heartbreak,
+  // social struggles, poor decisions.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // TEEN - POSITIVE
+  // =====================================================
+
+  {
+    "name": "First Date",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Went on a first real date.",
+    "traits": [
+      "Confidence",
+      "Love"
+    ]
+  },
+  {
+    "name": "Learned To Drive",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Earned a driver's license.",
+    "traits": [
+      "Confidence",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Summer Job",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Worked a first summer job.",
+    "traits": [
+      "Career",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "Became Team Captain",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Led a sports team.",
+    "traits": [
+      "Leadership",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Won State Competition",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Won a prestigious competition.",
+    "traits": [
+      "Confidence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Started A Small Business",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Started a small side business.",
+    "traits": [
+      "Career",
+      "RiskTolerance"
+    ]
+  },
+  {
+    "name": "Volunteer Leadership Role",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Coordinated volunteer activities.",
+    "traits": [
+      "Leadership",
+      "Community"
+    ]
+  },
+  {
+    "name": "Learned Guitar",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Became skilled at guitar.",
+    "traits": [
+      "Creativity",
+      "Discipline"
+    ]
+  },
+  {
+    "name": "Built Strong Friend Group",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Developed several close friendships.",
+    "traits": [
+      "Trust",
+      "Community"
+    ]
+  },
+  {
+    "name": "Started Fitness Journey",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Committed to personal fitness.",
+    "traits": [
+      "Discipline",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Won Sports Championship",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Won a championship with a team.",
+    "traits": [
+      "Confidence",
+      "Community"
+    ]
+  },
+  {
+    "name": "Mentored Younger Student",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Helped a younger student succeed.",
+    "traits": [
+      "Kindness",
+      "Leadership"
+    ]
+  },
+  {
+    "name": "Earned First Award",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Received a major personal award.",
+    "traits": [
+      "Confidence"
+    ]
+  },
+  {
+    "name": "School Spirit Leader",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Helped organize school events.",
+    "traits": [
+      "Community",
+      "Leadership"
+    ]
+  },
+  {
+    "name": "Perfect School Year",
+    "category": "Teen",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Had an exceptional year academically and socially.",
+    "traits": [
+      "Confidence",
+      "Discipline"
+    ]
+  },
+
+  // =====================================================
+  // TEEN - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Attended School Dance",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Attended a memorable school dance.",
+    "traits": []
+  },
+  {
+    "name": "Learner's Permit",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Received a learner's driving permit.",
+    "traits": []
+  },
+  {
+    "name": "School Trip",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Participated in a school trip.",
+    "traits": []
+  },
+  {
+    "name": "Summer Camp Counselor",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Worked at a summer camp.",
+    "traits": []
+  },
+  {
+    "name": "School Festival",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Participated in a school festival.",
+    "traits": []
+  },
+  {
+    "name": "First Cell Phone",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 9,
+    "description": "Received a first personal cellphone.",
+    "traits": []
+  },
+  {
+    "name": "School Club Member",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Joined an extracurricular club.",
+    "traits": []
+  },
+  {
+    "name": "Part Time Job",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Worked after school hours.",
+    "traits": []
+  },
+  {
+    "name": "Prom Night",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 16,
+    "maxAge": 18,
+    "weight": 7,
+    "description": "Attended senior prom.",
+    "traits": []
+  },
+  {
+    "name": "School Graduation",
+    "category": "Teen",
+    "polarity": "Neutral",
+    "minAge": 17,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Graduated high school.",
+    "traits": []
+  }, // =====================================================
+  // TEEN - NEGATIVE
+  // =====================================================
+
+  {
+    "name": "Rejected By Crush",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 6,
+    "description": "Confessed feelings and was rejected.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "First Heartbreak",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 5,
+    "description": "Experienced a difficult first breakup.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Failed Driving Test",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Failed the first driving test attempt.",
+    "traits": [
+      "Determination"
+    ]
+  },
+  {
+    "name": "Lost Friend Group",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "A close group of friends drifted apart.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Online Bullying",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Was targeted through online harassment.",
+    "traits": [
+      "Resilience",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Public Humiliation",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 3,
+    "description": "Experienced an embarrassing public incident.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Suspended From Team",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Lost a spot on a school team.",
+    "traits": [
+      "Determination",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Teen Burnout",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 15,
+    "maxAge": 18,
+    "weight": 2,
+    "description": "Became overwhelmed by responsibilities.",
+    "traits": [
+      "Reflection",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Trouble With Law",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 1,
+    "description": "Faced consequences for a poor decision.",
+    "traits": [
+      "Reflection",
+      "Independence"
+    ]
+  },
+  {
+    "name": "School Rivalry",
+    "category": "Teen",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 4,
+    "description": "Had an ongoing rivalry with another student.",
+    "traits": [
+      "Determination",
+      "Reflection"
+    ]
+  }, // =====================================================
+  // RELATIONSHIPS
+  //
+  // Ages: 13 - 80
+  //
+  // Positive Events:
+  // Love, trust, commitment, marriage,
+  // healthy relationships.
+  //
+  // Neutral Events:
+  // Dating history and life experiences.
+  // Grants NO traits.
+  //
+  // Negative Events:
+  // Breakups, betrayal, divorce,
+  // rejection, loss.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+  // =====================================================
+  // RELATIONSHIP - POSITIVE
+  // =====================================================
+
+  {
+    "name": "First Crush",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Developed a first romantic crush.",
+    "traits": [
+      "Love",
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Summer Romance",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 16,
+    "maxAge": 25,
+    "weight": 7,
+    "description": "Enjoyed a memorable summer romance.",
+    "traits": [
+      "Love",
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Long Term Relationship",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Maintained a long-term romantic relationship.",
+    "traits": [
+      "Loyalty",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Relationship Success",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Built a strong and healthy relationship.",
+    "traits": [
+      "Trust",
+      "Loyalty"
+    ]
+  },
+  {
+    "name": "Engaged",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Became engaged to a partner.",
+    "traits": [
+      "Love",
+      "Commitment"
+    ]
+  },
+  {
+    "name": "Marriage",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 20,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Got married.",
+    "traits": [
+      "Love",
+      "Family",
+      "Loyalty"
+    ]
+  },
+  {
+    "name": "Met Soulmate",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Met someone who changed life forever.",
+    "traits": [
+      "Love",
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Supportive Partner",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Found a consistently supportive partner.",
+    "traits": [
+      "Trust",
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Romantic Getaway",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Shared a memorable trip with a partner.",
+    "traits": [
+      "Love"
+    ]
+  },
+  {
+    "name": "Renewed Relationship",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 20,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Successfully repaired a struggling relationship.",
+    "traits": [
+      "Patience",
+      "Trust"
+    ]
+  },
+  {
+    "name": "Became Parents Together",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Welcomed a child with a partner.",
+    "traits": [
+      "Family",
+      "Responsibility"
+    ]
+  },
+  {
+    "name": "Childhood Sweetheart",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 40,
+    "weight": 2,
+    "description": "Stayed with a partner from youth.",
+    "traits": [
+      "Loyalty",
+      "Love"
+    ]
+  },
+  {
+    "name": "Marriage Anniversary Tradition",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Regularly celebrated relationship milestones.",
+    "traits": [
+      "Loyalty"
+    ]
+  },
+  {
+    "name": "Strong Emotional Bond",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Built deep emotional trust with a partner.",
+    "traits": [
+      "Trust",
+      "Love"
+    ]
+  },
+  {
+    "name": "Healthy Communication",
+    "category": "Relationship",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Learned to communicate openly in relationships.",
+    "traits": [
+      "Trust",
+      "Patience"
+    ]
+  }, // =====================================================
+  // RELATIONSHIP - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Went On First Date",
+    "category": "Relationship",
+    "polarity": "Neutral",
+    "minAge": 13,
+    "maxAge": 18,
+    "weight": 10,
+    "description": "Experienced a first date.",
+    "traits": []
+  },
+  {
+    "name": "High School Romance",
+    "category": "Relationship",
+    "polarity": "Neutral",
+    "minAge": 14,
+    "maxAge": 18,
+    "weight": 8,
+    "description": "Dated someone during high school.",
+    "traits": []
+  },
+  {
+    "name": "College Sweetheart",
+    "category": "Relationship",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 25,
+    "weight": 6,
+    "description": "Met a romantic partner in college.",
+    "traits": []
+  },
+  {
+    "name": "Online Relationship",
+    "category": "Relationship",
+    "polarity": "Neutral",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Maintained a relationship online.",
+    "traits": []
+  },
+  {
+    "name": "Workplace Romance",
+    "category": "Relationship",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Dated someone from work.",
+    "traits": []
+  }, // =====================================================
+  // RELATIONSHIP - NEGATIVE
+  // =====================================================
+
+  {
+    "name": "Heartbreak",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 14,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Experienced a painful romantic heartbreak.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Difficult Breakup",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Went through a difficult breakup.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Cheated On",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "A romantic partner was unfaithful.",
+    "traits": [
+      "Trust",
+      "Anxiety"
+    ]
+  },
+  {
+    "name": "Broken Engagement",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "An engagement ended before marriage.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Divorce",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "A marriage ended in divorce.",
+    "traits": [
+      "Reflection",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Relationship Betrayal",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "A trusted partner betrayed confidence.",
+    "traits": [
+      "Trust",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Unrequited Love",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 13,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Loved someone who did not return those feelings.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Toxic Relationship",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Spent time in an unhealthy relationship.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Lost Partner",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Lost a romantic partner.",
+    "traits": [
+      "Love",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Abandoned At Altar",
+    "category": "Relationship",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "A wedding was called off unexpectedly.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  }, // =====================================================
+  // CAREER
+  //
+  // Ages: 18 - 80
+  //
+  // Positive Events:
+  // Career growth, promotions,
+  // leadership, recognition.
+  //
+  // Neutral Events:
+  // Career path history.
+  // Grants NO traits.
+  //
+  // Negative Events:
+  // Failure, burnout, layoffs,
+  // career setbacks.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // CAREER - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Teacher Assistant",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 30,
+    "weight": 5,
+    "description": "Helped educate and mentor students.",
+    "traits": [
+      "Kindness",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Programmer",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Built a career in software development.",
+    "traits": [
+      "Knowledge",
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Firefighter",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Served the community as a firefighter.",
+    "traits": [
+      "Courage",
+      "Community",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Engineer",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Worked as an engineer.",
+    "traits": [
+      "Knowledge",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Doctor",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Built a medical career helping others.",
+    "traits": [
+      "Knowledge",
+      "Kindness"
+    ]
+  },
+  {
+    "name": "Business Owner",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Started and operated a business.",
+    "traits": [
+      "Career",
+      "RiskTolerance"
+    ]
+  },
+  {
+    "name": "Received Promotion",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Earned a promotion through performance.",
+    "traits": [
+      "Confidence",
+      "Career"
+    ]
+  },
+  {
+    "name": "Employee Of The Month",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Recognized for exceptional work.",
+    "traits": [
+      "Confidence",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Successful Startup",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Built a successful startup company.",
+    "traits": [
+      "Career",
+      "RiskTolerance",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Mentored New Employees",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Helped develop new coworkers.",
+    "traits": [
+      "Leadership",
+      "Kindness"
+    ]
+  },
+  {
+    "name": "Department Leader",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Led a department or team.",
+    "traits": [
+      "Leadership",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Published Industry Research",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Published work recognized by peers.",
+    "traits": [
+      "Knowledge",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Workplace Innovation Award",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 20,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Received recognition for innovation.",
+    "traits": [
+      "Knowledge",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Career Mentor",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Became a mentor to others.",
+    "traits": [
+      "Leadership",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Dream Job Achieved",
+    "category": "Career",
+    "polarity": "Positive",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Successfully entered a dream career.",
+    "traits": [
+      "Confidence",
+      "Optimism"
+    ]
+  },
+
+  // =====================================================
+  // CAREER - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Office Assistant",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Worked as an office assistant.",
+    "traits": []
+  },
+  {
+    "name": "Retail Worker",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Worked in retail sales.",
+    "traits": []
+  },
+  {
+    "name": "Warehouse Worker",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Worked in warehouse operations.",
+    "traits": []
+  },
+  {
+    "name": "Truck Driver",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Worked in transportation.",
+    "traits": []
+  },
+  {
+    "name": "Construction Worker",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Worked in construction.",
+    "traits": []
+  },
+  {
+    "name": "Factory Worker",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Worked in manufacturing.",
+    "traits": []
+  },
+  {
+    "name": "Sales Associate",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Worked in sales.",
+    "traits": []
+  },
+  {
+    "name": "Customer Service Role",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Worked directly with customers.",
+    "traits": []
+  },
+  {
+    "name": "Career Change",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Changed professional fields.",
+    "traits": []
+  },
+  {
+    "name": "Remote Worker",
+    "category": "Career",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Worked primarily from home.",
+    "traits": []
+  }, // =====================================================
+  // CAREER - NEGATIVE
+  //
+  // Layoffs
+  // Burnout
+  // Career setbacks
+  // Workplace conflict
+  // Failed businesses
+  //
+  // Goal:
+  // 10 Events
+  //
+  // =====================================================
+
+  {
+    "name": "Lost Job",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Lost employment unexpectedly.",
+    "traits": [
+      "Determination",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Layoff",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Position was eliminated during company downsizing.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Burnout",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Worked to the point of emotional and physical exhaustion.",
+    "traits": [
+      "Reflection",
+      "Career"
+    ]
+  },
+  {
+    "name": "Business Failed",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "A business venture failed.",
+    "traits": [
+      "Resilience",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Failed Startup",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "A startup company did not succeed.",
+    "traits": [
+      "RiskTolerance",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Toxic Boss",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Worked under poor leadership.",
+    "traits": [
+      "Reflection",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Workplace Conflict",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Experienced serious conflict with coworkers.",
+    "traits": [
+      "Reflection",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Passed Over For Promotion",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Missed out on a desired promotion.",
+    "traits": [
+      "Determination",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Wrongful Termination",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 21,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Lost a job under unfair circumstances.",
+    "traits": [
+      "Resilience",
+      "Independence"
+    ]
+  },
+  {
+    "name": "Career Stagnation",
+    "category": "Career",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Spent years feeling stuck professionally.",
+    "traits": [
+      "Reflection",
+      "Determination"
+    ]
+  }, // =====================================================
+  // TRAVEL
+  //
+  // Ages: 18 - 80
+  //
+  // Positive Events:
+  // Exploration, adventure, discovery,
+  // cultural experiences, growth.
+  //
+  // Neutral Events:
+  // Trips and destinations.
+  // Grants NO traits.
+  //
+  // Negative Events:
+  // Travel setbacks, accidents,
+  // missed trips, being stranded.
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // TRAVEL - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Road Trip",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 10,
+    "description": "Took a memorable road trip.",
+    "traits": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Study Abroad",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 30,
+    "weight": 4,
+    "description": "Studied in another country.",
+    "traits": [
+      "Adventure",
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Visited Europe",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Traveled throughout Europe.",
+    "traits": [
+      "Adventure",
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Backpacking Adventure",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 40,
+    "weight": 3,
+    "description": "Backpacked through multiple destinations.",
+    "traits": [
+      "Adventure",
+      "Independence"
+    ]
+  },
+  {
+    "name": "National Parks Tour",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Visited several national parks.",
+    "traits": [
+      "Adventure",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "International Exchange",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 40,
+    "weight": 2,
+    "description": "Participated in a cultural exchange program.",
+    "traits": [
+      "Knowledge",
+      "Community"
+    ]
+  },
+  {
+    "name": "Solo Travel Experience",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Traveled alone for the first time.",
+    "traits": [
+      "Independence",
+      "Adventure"
+    ]
+  },
+  {
+    "name": "World Traveler",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Visited many countries throughout life.",
+    "traits": [
+      "Knowledge",
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Learned New Language Abroad",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 60,
+    "weight": 2,
+    "description": "Learned a language while traveling.",
+    "traits": [
+      "Knowledge",
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Volunteer Abroad",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 70,
+    "weight": 2,
+    "description": "Volunteered in another country.",
+    "traits": [
+      "Kindness",
+      "Community"
+    ]
+  },
+  {
+    "name": "Cross Country Journey",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Traveled across the country.",
+    "traits": [
+      "Adventure",
+      "Determination"
+    ]
+  },
+  {
+    "name": "Cultural Discovery Trip",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Experienced a different culture firsthand.",
+    "traits": [
+      "Knowledge",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Island Vacation",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Enjoyed a memorable island vacation.",
+    "traits": [
+      "Optimism"
+    ]
+  },
+  {
+    "name": "Mountain Expedition",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Completed a challenging mountain trip.",
+    "traits": [
+      "Determination",
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Cruise Adventure",
+    "category": "Travel",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Took a cruise to multiple destinations.",
+    "traits": [
+      "Adventure"
+    ]
+  },
+
+  // =====================================================
+  // TRAVEL - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Visited Canada",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Visited Canada.",
+    "traits": []
+  },
+  {
+    "name": "Visited New York",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Visited New York.",
+    "traits": []
+  },
+  {
+    "name": "Visited Florida",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Visited Florida.",
+    "traits": []
+  },
+  {
+    "name": "Visited California",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Visited California.",
+    "traits": []
+  },
+  {
+    "name": "Business Travel",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Traveled regularly for work.",
+    "traits": []
+  },
+  {
+    "name": "Family Vacation",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Took family vacations regularly.",
+    "traits": []
+  },
+  {
+    "name": "Weekend Getaway",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 9,
+    "description": "Enjoyed frequent weekend trips.",
+    "traits": []
+  },
+  {
+    "name": "Beach Vacation",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Spent time on beach vacations.",
+    "traits": []
+  },
+  {
+    "name": "Camping Trip",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Went camping as a traveler.",
+    "traits": []
+  },
+  {
+    "name": "Visited Historical Sites",
+    "category": "Travel",
+    "polarity": "Neutral",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Visited historical landmarks.",
+    "traits": []
+  }, // =====================================================
+  // TRAVEL - NEGATIVE
+  //
+  // Travel setbacks
+  // Accidents
+  // Delays
+  // Lost opportunities
+  //
+  // Goal:
+  // 10 Events
+  //
+  // =====================================================
+
+  {
+    "name": "Missed Flight",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Missed an important flight.",
+    "traits": [
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Lost Luggage",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Lost baggage during travel.",
+    "traits": [
+      "Adaptability"
+    ]
+  },
+  {
+    "name": "Travel Injury",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Suffered an injury while traveling.",
+    "traits": [
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Vacation Cancelled",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "A planned vacation was cancelled.",
+    "traits": [
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Vehicle Breakdown",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Transportation failed during a trip.",
+    "traits": [
+      "Adaptability"
+    ]
+  },
+  {
+    "name": "Travel Scam",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Became the victim of a travel scam.",
+    "traits": [
+      "Reflection",
+      "Security"
+    ]
+  },
+  {
+    "name": "Lost Passport",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Lost important travel documents.",
+    "traits": [
+      "Adaptability",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Stranded Abroad",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Became stranded in a foreign country.",
+    "traits": [
+      "Independence",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Bad Weather Ruined Trip",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Weather severely disrupted travel plans.",
+    "traits": [
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Stolen Wallet",
+    "category": "Travel",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Lost money and identification during travel.",
+    "traits": [
+      "Security",
+      "Resilience"
+    ]
+  }, // =====================================================
+  // ADULT
+  //
+  // Ages: 25 - 80
+  //
+  // Positive Events:
+  // Family growth
+  // Home ownership
+  // Stability
+  // Community leadership
+  // Personal achievement
+  //
+  // Neutral Events:
+  // Adult life experiences
+  // Grants NO traits
+  //
+  // Negative Events:
+  // Financial struggles
+  // Family issues
+  // Health concerns
+  // Major setbacks
+  //
+  // Goal:
+  // 15 Positive
+  // 15 Neutral
+  // 10 Negative
+  //
+  // Total:
+  // 40 Events
+  //
+  // =====================================================
+
+
+  // =====================================================
+  // ADULT - POSITIVE
+  // =====================================================
+
+  {
+    "name": "Bought First House",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Purchased a first home.",
+    "traits": [
+      "Security",
+      "Money"
+    ]
+  },
+  {
+    "name": "Started Family",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Started a family.",
+    "traits": [
+      "Family",
+      "Love"
+    ]
+  },
+  {
+    "name": "Had First Child",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 22,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Became a parent for the first time.",
+    "traits": [
+      "Family",
+      "Responsibility"
+    ]
+  },
+  {
+    "name": "Adopted Child",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Welcomed a child through adoption.",
+    "traits": [
+      "Kindness",
+      "Family"
+    ]
+  },
+  {
+    "name": "Paid Off Debt",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Successfully paid off major debts.",
+    "traits": [
+      "Discipline",
+      "Security"
+    ]
+  },
+  {
+    "name": "Community Leader",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 30,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Became a respected community leader.",
+    "traits": [
+      "Leadership",
+      "Community"
+    ]
+  },
+  {
+    "name": "Home Renovation Success",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Successfully improved and renovated a home.",
+    "traits": [
+      "Determination",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Started Charity Work",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Dedicated time to charitable causes.",
+    "traits": [
+      "Kindness",
+      "Community"
+    ]
+  },
+  {
+    "name": "Financial Success",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 30,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Achieved long-term financial stability.",
+    "traits": [
+      "Money",
+      "Security"
+    ]
+  },
+  {
+    "name": "Mentored Younger Adults",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 30,
+    "maxAge": 80,
+    "weight": 4,
+    "description": "Guided younger adults through life challenges.",
+    "traits": [
+      "Leadership",
+      "Patience"
+    ]
+  },
+  {
+    "name": "Built Dream Home",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 30,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Built the home they always wanted.",
+    "traits": [
+      "Confidence",
+      "Security"
+    ]
+  },
+  {
+    "name": "Celebrated 25th Anniversary",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 40,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Reached a major marriage milestone.",
+    "traits": [
+      "Loyalty",
+      "Family"
+    ]
+  },
+  {
+    "name": "Started New Hobby",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 6,
+    "description": "Discovered a meaningful new hobby.",
+    "traits": [
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Published A Book",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Published a book.",
+    "traits": [
+      "Knowledge",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Achieved Life Goal",
+    "category": "Adult",
+    "polarity": "Positive",
+    "minAge": 30,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Completed a major personal life goal.",
+    "traits": [
+      "Confidence",
+      "Optimism"
+    ]
+  },
+
+  // =====================================================
+  // ADULT - NEUTRAL
+  // =====================================================
+
+  {
+    "name": "Suburban Life",
+    "category": "Adult",
+    "polarity": "Neutral",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 10,
+    "description": "Lived in the suburbs.",
+    "traits": []
+  },
+  {
+    "name": "Moved To New City",
+    "category": "Adult",
+    "polarity": "Neutral",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 5,
+    "description": "Relocated to a different city.",
+    "traits": []
+  },
+  {
+    "name": "Became Homeowner",
+    "category": "Adult",
+    "polarity": "Neutral",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Purchased a residence.",
+    "traits": []
+  },
+  {
+    "name": "Attended Community Events",
+    "category": "Adult",
+    "polarity": "Neutral",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 7,
+    "description": "Frequently participated in local events.",
+    "traits": []
+  },
+  {
+    "name": "Weekend Hobbyist",
+    "category": "Adult",
+    "polarity": "Neutral",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 8,
+    "description": "Spent weekends pursuing hobbies.",
+    "traits": []
+  }, // =====================================================
+  // ADULT - NEGATIVE
+  //
+  // Financial hardship
+  // Family struggles
+  // Major setbacks
+  // Health scares
+  //
+  // Goal:
+  // 10 Events
+  //
+  // =====================================================
+
+  {
+    "name": "Foreclosure",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Lost a home due to financial hardship.",
+    "traits": [
+      "Money",
+      "Security"
+    ]
+  },
+  {
+    "name": "Custody Dispute",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Went through a difficult custody battle.",
+    "traits": [
+      "Resilience",
+      "Family"
+    ]
+  },
+  {
+    "name": "Major Illness",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Experienced a major health challenge.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Car Accident",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Was involved in a serious vehicle accident.",
+    "traits": [
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Bankruptcy",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 1,
+    "description": "Declared bankruptcy after severe financial losses.",
+    "traits": [
+      "Money",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Lost Home",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Lost a primary residence unexpectedly.",
+    "traits": [
+      "Security",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Unexpected Medical Bills",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 3,
+    "description": "Faced major medical expenses.",
+    "traits": [
+      "Money",
+      "Security"
+    ]
+  },
+  {
+    "name": "Failed Investment",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Lost money on a major investment.",
+    "traits": [
+      "Reflection",
+      "Money"
+    ]
+  },
+  {
+    "name": "Midlife Crisis",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 35,
+    "maxAge": 65,
+    "weight": 3,
+    "description": "Questioned life direction and personal goals.",
+    "traits": [
+      "Reflection",
+      "SelfImprovement"
+    ]
+  },
+  {
+    "name": "Family Estrangement",
+    "category": "Adult",
+    "polarity": "Negative",
+    "minAge": 25,
+    "maxAge": 80,
+    "weight": 2,
+    "description": "Became distant from close family members.",
+    "traits": [
+      "Reflection",
+      "Resilience"
+    ]
+  }, // =====================================================
+  // SENIOR - POSITIVE (ADDITIONAL)
+  // =====================================================
+
+  {
+    "name": "Family Patriarch",
+    "category": "Senior",
+    "polarity": "Positive",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 2,
+    "description": "Became a respected leader of the family.",
+    "traits": [
+      "Leadership",
+      "Family"
+    ]
+  },
+  {
+    "name": "Volunteer Retirement",
+    "category": "Senior",
+    "polarity": "Positive",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 3,
+    "description": "Spent retirement helping others through volunteer work.",
+    "traits": [
+      "Kindness",
+      "Community"
+    ]
+  },
+  {
+    "name": "Golden Anniversary",
+    "category": "Senior",
+    "polarity": "Positive",
+    "minAge": 65,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Celebrated a 50th wedding anniversary.",
+    "traits": [
+      "Loyalty",
+      "Love"
+    ]
+  },
+  {
+    "name": "Beloved Grandparent",
+    "category": "Senior",
+    "polarity": "Positive",
+    "minAge": 55,
+    "maxAge": 100,
+    "weight": 5,
+    "description": "Built strong relationships with grandchildren.",
+    "traits": [
+      "Family",
+      "Kindness"
+    ]
+  },
+  {
+    "name": "Legacy Scholarship",
+    "category": "Senior",
+    "polarity": "Positive",
+    "minAge": 65,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Created a scholarship or legacy fund for future generations.",
+    "traits": [
+      "Community",
+      "Generosity"
+    ]
+  }, // =====================================================
+  // SENIOR - NEUTRAL (ADDITIONAL)
+  // =====================================================
+
+  {
+    "name": "Morning Coffee Group",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 7,
+    "description": "Met regularly with friends for coffee.",
+    "traits": []
+  },
+  {
+    "name": "Retirement Hobby",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 8,
+    "description": "Developed a hobby during retirement.",
+    "traits": []
+  },
+  {
+    "name": "Local Club Member",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 55,
+    "maxAge": 100,
+    "weight": 6,
+    "description": "Joined a local social club.",
+    "traits": []
+  },
+  {
+    "name": "Seasonal Traveler",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 5,
+    "description": "Traveled during retirement seasons.",
+    "traits": []
+  },
+  {
+    "name": "Regular Family Holidays",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 55,
+    "maxAge": 100,
+    "weight": 8,
+    "description": "Spent holidays with family.",
+    "traits": []
+  },
+  {
+    "name": "Fishing Retirement",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 4,
+    "description": "Spent retirement fishing.",
+    "traits": []
+  },
+  {
+    "name": "Community Events Regular",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 55,
+    "maxAge": 100,
+    "weight": 5,
+    "description": "Frequently attended community events.",
+    "traits": []
+  },
+  {
+    "name": "Book Club Member",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 4,
+    "description": "Participated in a book club.",
+    "traits": []
+  },
+  {
+    "name": "Retirement Road Trips",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 4,
+    "description": "Took frequent road trips in retirement.",
+    "traits": []
+  },
+  {
+    "name": "Family Historian",
+    "category": "Senior",
+    "polarity": "Neutral",
+    "minAge": 60,
+    "maxAge": 100,
+    "weight": 3,
+    "description": "Preserved family stories and records.",
+    "traits": []
+  },
+  /// =====================================================
+  // WILDCARD LIFE EVENTS
+  //
+  // VERY RARE EVENTS
+  //
+  // Weight Guide:
+  //
+  // 1  = Extremely Rare
+  // 2  = Rare
+  // 3  = Uncommon
+  //
+  // These events can completely
+  // change a character's life.
+  //
+  // =====================================================
+  {
+    "name": "Won Lottery",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Won a life-changing lottery jackpot.",
+    "traits": [
+      "Money",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "National Hero",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Became famous for a heroic act.",
+    "traits": [
+      "Courage",
+      "Confidence",
+      "Community"
+    ]
+  },
+  {
+    "name": "Invented Something Important",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Created an invention that gained widespread recognition.",
+    "traits": [
+      "Knowledge",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Became Famous",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 16,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Unexpectedly became widely known.",
+    "traits": [
+      "Confidence",
+      "Community"
+    ]
+  },
+  {
+    "name": "Rescued Multiple Lives",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 16,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Saved several people during a dangerous situation.",
+    "traits": [
+      "Courage",
+      "Leadership"
+    ]
+  },
+  {
+    "name": "House Fire",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Lost a home in a fire.",
+    "traits": [
+      "Resilience",
+      "Security"
+    ]
+  },
+  {
+    "name": "Natural Disaster Survivor",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 5,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Lived through a major natural disaster.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Wrongfully Accused",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Faced serious accusations despite innocence.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Identity Stolen",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 18,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Victim of serious identity theft.",
+    "traits": [
+      "Security",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Severe Accident Survivor",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Survived a life-threatening accident.",
+    "traits": [
+      "Resilience",
+      "Reflection"
+    ]
+  },
+  {
+    "name": "Hidden Treasure Discovery",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 18,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Discovered something incredibly valuable by accident.",
+    "traits": [
+      "Adventure",
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Viral Internet Fame",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 13,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Unexpectedly became famous online.",
+    "traits": [
+      "Confidence"
+    ]
+  },
+  {
+    "name": "Stranded On Remote Island",
+    "category": "Wildcard",
+    "polarity": "Negative",
+    "minAge": 16,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Survived while stranded far from civilization.",
+    "traits": [
+      "Independence",
+      "Resilience"
+    ]
+  },
+  {
+    "name": "Witnessed Historic Event",
+    "category": "Wildcard",
+    "polarity": "Neutral",
+    "minAge": 5,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Personally witnessed a major historic event.",
+    "traits": []
+  },
+  {
+    "name": "Secret Millionaire",
+    "category": "Wildcard",
+    "polarity": "Positive",
+    "minAge": 25,
+    "maxAge": 100,
+    "weight": 1,
+    "description": "Acquired great wealth without public attention.",
+    "traits": [
+      "Money",
+      "Security"
+    ]
+  }
+]
