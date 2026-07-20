@@ -67,4 +67,7 @@ public class SpecialTrait
 
     [JsonPropertyName("_memoryNotes")]
     public string MemoryNotes { get; set; } = "";
+    [JsonPropertyName("strength")]
+    public int Strength { get; set; } = 50;
+
 }

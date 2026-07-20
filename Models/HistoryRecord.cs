@@ -38,4 +38,5 @@ public class HistoryRecord
         get;
         set;
     } = new();
+    public string? Polarity { get; set; }
 }

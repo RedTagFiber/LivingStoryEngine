@@ -1,32 +1,27 @@
-﻿using LivingStoryEngine;
-using LivingStoryEngine.Characters;
+﻿using LivingStoryEngine.Characters;
+using LivingStoryEngine.Relationshipsystems;
 
-namespace LivingStoryEngine.NPCs;
-
-public static class NPCTemplate
+namespace LivingStoryEngine.NPCs
 {
-    public static Character Create()
+    public static class NPCTemplate
     {
-        var npc = new Character();
+        public static Character Create(string name, int age)
+        {
+            var npc = new Character();
 
-        npc.Name = "";
-        npc.Location = "Home";
+            // Basic identity
+            npc.Name = name;
+            npc.Age = age;
 
-        npc.Goal = "";
-        npc.Need = "";
-        npc.Fear = "";
-        npc.Want = "";
+            // Personality (empty defaults)
+            npc.Goal = "";
+            npc.Need = "";
+            npc.Fear = "";
 
-        npc.CurrentDecision = "Thinking";
+            // No relationships yet — they will be added later
+            // npc.Meet(new Character { Name = "Someone" });
 
-        npc.Thought = "";
-        npc.JournalEntry = "";
-
-        npc.Happiness = 50;
-        npc.Energy = 100;
-        npc.Stress = 0;
-        npc.Curiosity = 50;
-
-        return npc;
+            return npc;
+        }
     }
 }

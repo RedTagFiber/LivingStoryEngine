@@ -1,75 +1,51 @@
-﻿using LivingStoryEngine;
-using LivingStoryEngine.Characters;
+﻿using LivingStoryEngine.Characters;
+using LivingStoryEngine.Relationshipsystems;
+using LivingStoryEngine.Emotional;
 
-namespace LivingStoryEngine.Relationshipsystems
+namespace LivingStoryEngine.NPCs
 {
-    namespace NPCs
+    public static class Steve
     {
-        public static class Steve
+        public static Character Create()
         {
-            public static Character Create()
+            var steve = new Character();
+
+            // ============================
+            // BASIC IDENTITY
+            // ============================
+            steve.Name = "Steve";
+            steve.Age = 30;
+
+            // ============================
+            // PERSONALITY / MOTIVATION
+            // ============================
+            steve.Goal = "Provide for his future";
+            steve.Need = "Keep his job";
+            steve.Fear = "Failure";
+
+            // ============================
+            // EMOTIONAL PROFILE
+            // ============================
+            steve.Emotion = new EmotionalProfile
             {
-                var steve = new Character();
+                Personality = PersonalityType.Calm,
+                Attachment = AttachmentStyle.Secure,
+                EmotionalArmor = ArmorLevel.Medium
+            };
 
-                steve.Name = "Steve";
-                steve.Location = "Work";
+            // ============================
+            // RELATIONSHIP WITH AMBER
+            // ============================
+            steve.Meet(new Character { Name = "Amber" });
 
-                steve.Goal = "Provide for his future";
-                steve.Need = "Keep his job";
-                steve.Fear = "Failure";
-                steve.Want = "Spend more time with Amber";
+            var rel = steve.GetRelationship("Amber");
+            rel.Affection = 60;
+            rel.Trust = 50;
+            rel.Comfort = 45;
+            rel.Attraction = 65;
+            rel.Type = RelationshipType.Friend;
 
-                steve.CurrentDecision = "Thinking";
-
-                steve.Thought = "I should probably call Amber later.";
-                steve.JournalEntry = "Work has been busy.";
-                steve.Looks = 70;
-                steve.Charisma = 55;
-                steve.Confidence = 65;
-                steve.Maturity = 90;
-                steve.Happiness = 55;
-                steve.Energy = 90;
-                steve.Stress = 20;
-                steve.Curiosity = 30;
-                steve.Love = 75;
-                steve.LoveInterest = "Amber";
-                steve.UpdateLoveStatus();
-
-
-                steve.Relationships.Add(new Relationship
-                {
-                    TargetName = "Amber",
-
-                    Trust = 85,
-                    Respect = 80,
-                    Affection = 85,
-                    Attraction = 70,
-                    Love = 80,
-
-                    Status = "Dating"
-                });
-
-                ///finances
-                steve.Finances.Balance = 400;
-                steve.Finances.WeeklyIncome = 1200;
-                steve.Finances.MonthlyBills = 1800;
-                steve.Finances.Savings = 250;
-                steve.Finances.Debt = 5000;
-                steve.Finances.FinancialStress = 75;
-
-                steve.Spending.Food = 100;
-                steve.Spending.Entertainment = 50;
-                steve.Spending.HobbySpending = 25;
-                steve.Spending.SavingsRate = .30m;
-
-                //job information
-                steve.Job.Title = "Engineer";
-                steve.Job.WeeklyIncome = 1200;
-                steve.Job.StressLevel = 40;
-                steve.Job.Workplace = "Tech Corp";
-
-                return steve;
-            }
+            return steve;
         }
     }
 }

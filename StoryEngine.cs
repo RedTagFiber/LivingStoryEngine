@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using LivingStoryEngine.MemorySystem;
 
 namespace LivingStoryEngine;
 
@@ -9,7 +10,8 @@ public class StoryEngine
 {
     public List<Character> Characters { get; set; } = new();
 
-    public List<Memory> Memories { get; set; } = new();
+    public List<MemorySystem.Memory> Memories { get; set; } = new();
+
 
     public List<TimelineEvent> Timeline { get; set; } = new();
 

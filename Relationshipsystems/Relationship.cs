@@ -1,42 +1,47 @@
-﻿namespace LivingStoryEngine.Relationshipsystems;
+﻿using LivingStoryEngine.Characters;
+using LivingStoryEngine.Emotional;
+using System;
 
-public class Relationship
+namespace LivingStoryEngine.Relationshipsystems
 {
-    public string TargetName { get; set; } = "";
-
-    public int Trust { get; set; } = 50;
-
-    public int Respect { get; set; } = 50;
-
-    public int Affection { get; set; } = 50;
-
-    public int Attraction { get; set; } = 50;
-
-    public int Love { get; set; } = 0;
-    public int Resentment { get; set; } = 0;
-
-
-    public string Status { get; set; } = "Stranger";
-
-
-    // Udated method to update the relationship status based on Love and Trust levels
-    public void UpdateStatus()
+    public class Relationship
     {
-        if (Love >= 80)
+        public string TargetName { get; set; } = "";
+
+        // Emotional dimensions
+        public int Trust { get; set; } = 50;
+        public int Respect { get; set; } = 50;
+        public int Affection { get; set; } = 50;
+        public int Comfort { get; set; } = 50;
+        public int Attraction { get; set; } = 0;
+
+        // Negative emotion
+        public int Resentment { get; set; } = 0;
+
+        // Type (Friend, Rival, Partner, etc.)
+        public RelationshipType Type { get; set; } = RelationshipType.Acquaintance;
+
+        // Interaction history
+        public DateTime LastInteraction { get; set; } = DateTime.Now;
+        public int InteractionCount { get; set; } = 0;
+        public bool IsRomanticMatch(Character self, Character other)
         {
-            Status = "In Love";
+            return self.Orientation switch
+            {
+                Orientation.Straight => other.Gender == "Female" && self.Gender == "Male"
+                                        || other.Gender == "Male" && self.Gender == "Female",
+
+                Orientation.Gay => other.Gender == self.Gender,
+
+                Orientation.Bisexual => true,
+
+                Orientation.Pansexual => true,
+
+                Orientation.Asexual => false,
+
+                _ => false
+            };
         }
-        else if (Love >= 60)
-        {
-            Status = "Dating";
-        }
-        else if (Trust >= 60)
-        {
-            Status = "Friend";
-        }
-        else
-        {
-            Status = "Stranger";
-        }
+
     }
 }

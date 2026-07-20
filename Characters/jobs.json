@@ -1,0 +1,95 @@
+﻿[
+  {
+    "Title": "Retail Worker",
+    "PayTier": "Low",
+    "WeeklyIncome": 450,
+    "BaseStress": 20,
+    "PhysicalFatigue": 10,
+    "MentalFatigue": 5,
+    "Workplace": "SuperMart",
+    "Shifts": [
+      {
+        "StartHour": 9,
+        "EndHour": 17
+      }
+    ]
+  },
+  {
+    "Title": "Factory Worker",
+    "PayTier": "Low",
+    "WeeklyIncome": 520,
+    "BaseStress": 30,
+    "PhysicalFatigue": 25,
+    "MentalFatigue": 5,
+    "Workplace": "MFG Plant",
+    "Shifts": [
+      {
+        "StartHour": 6,
+        "EndHour": 14
+      },
+      {
+        "StartHour": 14,
+        "EndHour": 22
+      },
+      {
+        "StartHour": 22,
+        "EndHour": 6
+      }
+    ]
+  },
+  {
+    "Title": "Teacher",
+    "PayTier": "Mid",
+    "WeeklyIncome": 900,
+    "BaseStress": 40,
+    "PhysicalFatigue": 10,
+    "MentalFatigue": 20,
+    "Workplace": "High School",
+    "Shifts": [
+      {
+        "StartHour": 8,
+        "EndHour": 15
+      }
+    ]
+  },
+  {
+    "Title": "Lawyer",
+    "PayTier": "High",
+    "WeeklyIncome": 2500,
+    "BaseStress": 70,
+    "PhysicalFatigue": 5,
+    "MentalFatigue": 40,
+    "Workplace": "Law Firm",
+    "Shifts": [
+      {
+        "StartHour": 10,
+        "EndHour": 18
+      }
+    ]
+  },
+  {
+    "Title": "Software Engineer",
+    "PayTier": "High",
+    "WeeklyIncome": 1800,
+    "BaseStress": 30,
+    "PhysicalFatigue": 5,
+    "MentalFatigue": 25,
+    "Workplace": "TechCorp",
+    "Shifts": [
+      {
+        "StartHour": 10,
+        "EndHour": 18
+      }
+    ]
+  },
+  {
+    "Title": "Unemployed",
+    "PayTier": "Unemployed",
+    "WeeklyIncome": 0,
+    "BaseStress": 10,
+    "PhysicalFatigue": 0,
+    "MentalFatigue": 5,
+    "Workplace": "None",
+    "Shifts": []
+  }
+]
