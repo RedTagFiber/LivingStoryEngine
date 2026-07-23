@@ -1,7 +1,4 @@
-﻿using System;
-using LivingStoryEngine.Characters;
-
-namespace LivingStoryEngine.NPCs
+﻿namespace LivingStoryEngine.NPCs
 {
     public static class NPCTest
     {

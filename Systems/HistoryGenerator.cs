@@ -72,7 +72,7 @@ public static class HistoryGenerator
 
                     Description =
                         $"{selectedEvent.Category} event.",
-                   
+
                     GrantedTraits =
     selectedEvent.Polarity == "Neutral"
         ? new List<string>()

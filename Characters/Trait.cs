@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LivingStoryEngine.Characters;
+﻿namespace LivingStoryEngine.Characters;
 
 public class Trait
 {

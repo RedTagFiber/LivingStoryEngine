@@ -1,6 +1,5 @@
 ﻿using LivingStoryEngine.Characters;
 using LivingStoryEngine.MemorySystem;
-using System;
 
 namespace LivingStoryEngine
 {

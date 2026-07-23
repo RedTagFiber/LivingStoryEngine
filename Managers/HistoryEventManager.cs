@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-using LivingStoryEngine.Models;
+﻿using LivingStoryEngine.Models;
+using System.Text.Json;
 
 namespace LivingStoryEngine.Managers;
 
@@ -124,10 +124,10 @@ public static class HistoryEventManager
         Console.WriteLine();
         Console.WriteLine(
             $"Total Events: {_events.Count}"
-        ); 
+        );
     }
-        public static HistoryEventDefinition?
-    GetRandomWildcardEvent()
+    public static HistoryEventDefinition?
+GetRandomWildcardEvent()
     {
         var wildcardEvents =
             _events

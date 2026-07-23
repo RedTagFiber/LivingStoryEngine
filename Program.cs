@@ -1,76 +1,94 @@
 ﻿using LivingStoryEngine.Characters;
-using LivingStoryEngine.NPCs;
 using LivingStoryEngine.Systems;
-using System;
 
-internal class Program
+namespace LivingStoryEngine
 {
-    private static void Main(string[] args)
+    internal class Program
     {
-        // Load jobs from JSON
-        JobDatabase.LoadJobs();
-
-        // Generate 1 NPC for testing
-        NPC npc = NPCGenerator.GenerateNPC();
-        var c = npc.Character;
-
-        Console.WriteLine("===== BEGINNING STATS =====");
-        PrintStats(c);
-
-        Console.WriteLine($"Assigned Job: {c.Job?.Title ?? "None"}");
-        if (c.Job != null)
+        static void Main(string[] args)
         {
-            foreach (var shift in c.Job.Shifts)
-                Console.WriteLine($"Shift: {shift.StartHour}:00 - {shift.EndHour}:00");
+            Console.WriteLine("=== NPC AI TEST (llama3 + phi3) ===");
+            Console.WriteLine();
+
+            // Create an NPC (Eve or any NPC your generator makes)
+            NPC npc = NPCGenerator.GenerateNPC();
+            Character c = npc.Character;
+
+            Console.WriteLine($"Loaded NPC: {c.Name}");
+            Console.WriteLine("-----------------------------------");
+
+            // Run a 24-hour simulation
+            for (int hour = 0; hour < 24; hour++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"===== Hour {hour} =====");
+
+                // Sleep / Work / Idle
+                if (IsSleeping(hour))
+                {
+                    NPCGenerator.ApplySleep(c);
+                    c.LastEvent = "Slept peacefully.";
+                }
+                else if (IsWorking(c, hour))
+                {
+                    NPCGenerator.ApplyJobEffects(c, hour);
+                    c.LastEvent = "Worked a job shift.";
+                }
+                else
+                {
+                    NPCGenerator.ApplyIdle(c);
+                    c.LastEvent = "Relaxed during free time.";
+                }
+
+                // Generate emotional thought (phi3)
+                string thought = DialogueSystem.GenerateThought(c);
+                c.Thought = thought;
+
+                // Generate spoken dialogue (llama3)
+                string spoken = DialogueSystem.GenerateDialogue(c, "How are you feeling right now?");
+                c.SpokenLine = spoken;
+
+                // Print NPC status
+                PrintNPCState(c);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("=== Simulation Complete ===");
         }
 
-        Console.WriteLine("\n===== SIMULATING 48 HOURS (2 DAYS) =====");
+        // ============================================================
+        // Helper Methods
+        // ============================================================
 
-        for (int hour = 0; hour < 48; hour++)
+        static bool IsSleeping(int hour)
         {
-            int day = hour / 24;
-            int hourOfDay = hour % 24;
-
-            Console.WriteLine($"\nDay {day}, Hour {hourOfDay}");
-
-            // Sleep check
-            if (SleepSystem.ShouldSleep(c, hourOfDay))
-            {
-                SleepSystem.ApplySleep(c);
-                Console.WriteLine("NPC is sleeping...");
-            }
-            else
-            {
-                // Job effects
-                NPCGenerator.ApplyJobEffects(c, hourOfDay);
-                Console.WriteLine("NPC is awake.");
-
-                if (c.Job != null && SleepSystem.IsWorkingHour(c.Job, hourOfDay))
-                    Console.WriteLine("NPC is working this hour.");
-            }
-
-            // Print hourly changes
-            Console.WriteLine($"Energy: {c.Energy}");
-            Console.WriteLine($"Stress: {c.Stress.Value}");
-            Console.WriteLine($"Mood: {c.Mood.Value}");
+            return hour >= 22 || hour < 6;
         }
 
-        Console.WriteLine("\n===== ENDING STATS =====");
-        PrintStats(c);
-    }
+        static bool IsWorking(Character c, int hour)
+        {
+            if (c.Job == null || c.Job.Shifts == null)
+                return false;
 
-    private static void PrintStats(Character c)
-    {
-        Console.WriteLine("========================================");
-        Console.WriteLine($"Name: {c.Name}");
-        Console.WriteLine($"Job: {c.Job?.Title ?? "None"}");
-        Console.WriteLine($"Energy: {c.Energy}");
-        Console.WriteLine($"Stress: {c.Stress.Value}");
-        Console.WriteLine($"Mood: {c.Mood.Value}");
-        Console.WriteLine($"Comfort: {c.Comfort.Value}");
-        Console.WriteLine($"Trust: {c.Trust.Value}");
-        Console.WriteLine($"Respect: {c.Respect.Value}");
-        Console.WriteLine($"Affection: {c.Affection.Value}");
-        Console.WriteLine("========================================");
+            return c.Job.Shifts.Any(s =>
+                (s.StartHour < s.EndHour && hour >= s.StartHour && hour < s.EndHour) ||
+                (s.StartHour > s.EndHour && (hour >= s.StartHour || hour < s.EndHour))
+            );
+        }
+
+        static void PrintNPCState(Character c)
+        {
+            Console.WriteLine($"{c.Name}'s State:");
+            Console.WriteLine($"  Mood: {c.Mood.Value}");
+            Console.WriteLine($"  Stress: {c.Stress.Value}");
+            Console.WriteLine($"  Energy: {c.Energy}");
+            Console.WriteLine($"  Happiness: {c.Happiness}");
+            Console.WriteLine($"  Decision: {c.CurrentDecision}");
+            Console.WriteLine($"  Last Event: {c.LastEvent}");
+            Console.WriteLine();
+            Console.WriteLine($"  Thought (phi3): {c.Thought}");
+            Console.WriteLine($"  Dialogue (llama3): {c.SpokenLine}");
+            Console.WriteLine("-----------------------------------");
+        }
     }
 }

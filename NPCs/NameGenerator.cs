@@ -1,40 +1,57 @@
-﻿using System;
-
-namespace LivingStoryEngine.NPCs
+﻿namespace LivingStoryEngine.NPCs
 {
+    /// <summary>
+    /// Generates NPC names.
+    /// Clean, simple, and free of LogEvent() to avoid ambiguity.
+    /// </summary>
     public static class NameGenerator
     {
-        private static readonly string[] FirstNames =
+        private static readonly List<string> FemaleNames = new()
         {
-            "Evelyn", "Sophia", "Isabella", "Mia", "Charlotte",
-            "Liam", "Noah", "Oliver", "Elijah", "James",
-            "Ryan", "Amber", "Jake", "Steve", "Ava",
-            "Lucas", "Henry", "Benjamin", "Harper", "Ella"
+            "Eve", "Luna", "Maya", "Aria", "Sophie", "Clara"
         };
 
-        private static readonly string[] LastNames =
+        private static readonly List<string> MaleNames = new()
         {
-            "Johnson", "Smith", "Williams", "Brown", "Taylor",
-            "Davis", "Miller", "Wilson", "Moore", "Anderson",
-            "Clark", "Hall", "Lewis", "Young", "King"
+            "Ryan", "Ethan", "Leo", "Noah", "Caleb", "Julian"
+        };
+
+        private static readonly List<string> NeutralNames = new()
+        {
+            "Alex", "Jordan", "Taylor", "Sky", "River", "Phoenix"
         };
 
         private static readonly Random rng = new();
 
-        public static string GenerateFirstName()
+        // ============================================================
+        // NAME GENERATION
+        // ============================================================
+
+        public static string GenerateName(string gender)
         {
-            return FirstNames[rng.Next(FirstNames.Length)];
+            gender = gender.ToLower();
+
+            return gender switch
+            {
+                "female" => FemaleNames[rng.Next(FemaleNames.Count)],
+                "male" => MaleNames[rng.Next(MaleNames.Count)],
+                _ => NeutralNames[rng.Next(NeutralNames.Count)]
+            };
         }
 
-        public static string GenerateLastName()
-        {
-            return LastNames[rng.Next(LastNames.Length)];
-        }
+        // ============================================================
+        // RANDOM GENDER
+        // ============================================================
 
-        public static string GenerateFullName()
+        public static string RandomGender()
         {
-            return $"{GenerateFirstName()} {GenerateLastName()}";
+            int roll = rng.Next(3);
+            return roll switch
+            {
+                0 => "male",
+                1 => "female",
+                _ => "neutral"
+            };
         }
-
     }
 }

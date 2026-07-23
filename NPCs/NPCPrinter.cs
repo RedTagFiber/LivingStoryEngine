@@ -1,8 +1,4 @@
-﻿using System;
-using LivingStoryEngine.Characters;
-using LivingStoryEngine.Models;
-
-namespace LivingStoryEngine.NPCs
+﻿namespace LivingStoryEngine.NPCs
 {
     public static class NPCPrinter
     {

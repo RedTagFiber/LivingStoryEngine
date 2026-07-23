@@ -1,5 +1,4 @@
 ﻿using LivingStoryEngine.Characters;
-using LivingStoryEngine.Relationshipsystems;
 
 namespace LivingStoryEngine.NPCs
 {

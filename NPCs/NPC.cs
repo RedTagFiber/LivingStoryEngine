@@ -1,6 +1,5 @@
 ﻿using LivingStoryEngine.Characters;
 using LivingStoryEngine.Models;
-using System.Collections.Generic;
 
 public class NPC
 {

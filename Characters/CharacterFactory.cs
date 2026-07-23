@@ -1,8 +1,6 @@
 ﻿
 using LivingStoryEngine.Emotional;
 
-using LivingStoryEngine.Relationshipsystems;
-
 namespace LivingStoryEngine.Characters
 {
     public static class CharacterFactory

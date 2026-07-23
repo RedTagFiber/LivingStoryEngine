@@ -1,6 +1,4 @@
 ﻿using LivingStoryEngine.Characters;
-using LivingStoryEngine.Systems;
-using System.Linq;
 
 namespace LivingStoryEngine.Systems
 {

@@ -1,5 +1,8 @@
 ﻿public class Job
 {
+    public string Name { get; set; } = "Unknown";
+    public string Category { get; set; } = "General";
+
     public string Title { get; set; } = "";
     public string PayTier { get; set; } = "Low"; // Low, Mid, High, SuperHigh, Unemployed
 

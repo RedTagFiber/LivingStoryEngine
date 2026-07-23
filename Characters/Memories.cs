@@ -1,5 +1,4 @@
 ﻿using LivingStoryEngine.MemorySystem;
-using System.Collections.Generic;
 
 namespace LivingStoryEngine.Characters
 {

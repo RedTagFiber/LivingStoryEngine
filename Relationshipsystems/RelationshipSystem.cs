@@ -1,6 +1,5 @@
 ﻿using LivingStoryEngine.Characters;
 using LivingStoryEngine.Emotional;
-using System;
 
 namespace LivingStoryEngine.Relationshipsystems
 {

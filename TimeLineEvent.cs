@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LivingStoryEngine;
+﻿namespace LivingStoryEngine;
 
 public class TimelineEvent
 {

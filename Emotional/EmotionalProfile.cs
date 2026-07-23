@@ -1,6 +1,4 @@
-﻿using LivingStoryEngine.Emotional;
-using LivingStoryEngine.MemorySystem;
-using System.Net.Mail;
+﻿using LivingStoryEngine.MemorySystem;
 
 namespace LivingStoryEngine.Emotional;
 
@@ -49,134 +47,134 @@ public class EmotionalProfile
     }
 
     public void ProcessEvent(string eventDescription)
-{
-    // ============================
-    // PERSONALITY-BASED REACTIONS
-    // ============================
-    switch (Personality)
     {
-        case PersonalityType.Warm:
-            if (eventDescription.Contains("kind"))
-                Affection += 5;
+        // ============================
+        // PERSONALITY-BASED REACTIONS
+        // ============================
+        switch (Personality)
+        {
+            case PersonalityType.Warm:
+                if (eventDescription.Contains("kind"))
+                    Affection += 5;
 
-            if (eventDescription.Contains("conflict"))
-                Stress += 5;
-            break;
+                if (eventDescription.Contains("conflict"))
+                    Stress += 5;
+                break;
 
-        case PersonalityType.Guarded:
-            if (eventDescription.Contains("kind"))
-                Trust += 2; // small gain
+            case PersonalityType.Guarded:
+                if (eventDescription.Contains("kind"))
+                    Trust += 2; // small gain
 
-            if (eventDescription.Contains("lie"))
-                Stress += 15;
-            break;
+                if (eventDescription.Contains("lie"))
+                    Stress += 15;
+                break;
 
-        case PersonalityType.Outgoing:
-            if (eventDescription.Contains("social"))
-                Mood += 10;
+            case PersonalityType.Outgoing:
+                if (eventDescription.Contains("social"))
+                    Mood += 10;
 
-            if (eventDescription.Contains("ignore"))
-                Stress += 5;
-            break;
+                if (eventDescription.Contains("ignore"))
+                    Stress += 5;
+                break;
 
-        case PersonalityType.LoneWolf:
-            if (eventDescription.Contains("alone"))
-                Comfort += 10;
+            case PersonalityType.LoneWolf:
+                if (eventDescription.Contains("alone"))
+                    Comfort += 10;
 
-            if (eventDescription.Contains("crowd"))
-                Stress += 10;
-            break;
+                if (eventDescription.Contains("crowd"))
+                    Stress += 10;
+                break;
 
-        case PersonalityType.Anxious:
-            Stress += 5; // baseline sensitivity
+            case PersonalityType.Anxious:
+                Stress += 5; // baseline sensitivity
 
-            if (eventDescription.Contains("uncertain"))
-                Stress += 10;
-            break;
+                if (eventDescription.Contains("uncertain"))
+                    Stress += 10;
+                break;
 
-        case PersonalityType.Stoic:
-            Stress -= 5; // baseline calm
+            case PersonalityType.Stoic:
+                Stress -= 5; // baseline calm
 
-            if (eventDescription.Contains("emotional"))
-                Comfort -= 5;
-            break;
+                if (eventDescription.Contains("emotional"))
+                    Comfort -= 5;
+                break;
 
-        case PersonalityType.Chaotic:
-            Mood += 5;
-            Stress += 5;
-            break;
-
-        case PersonalityType.Empathic:
-            if (eventDescription.Contains("sad"))
-                Mood -= 5;
-
-            if (eventDescription.Contains("happy"))
+            case PersonalityType.Chaotic:
                 Mood += 5;
-            break;
-    }
-
-    // ============================
-    // ATTACHMENT-BASED REACTIONS
-    // ============================
-    switch (Attachment)
-    {
-        case AttachmentStyle.Secure:
-            if (eventDescription.Contains("support"))
-                Comfort += 10;
-            break;
-
-        case AttachmentStyle.Avoidant:
-            if (eventDescription.Contains("cling"))
-                Stress += 10;
-            break;
-
-        case AttachmentStyle.Anxious:
-            if (eventDescription.Contains("delay"))
-                Stress += 15;
-            break;
-
-        case AttachmentStyle.Disorganized:
-            Stress += 5; // baseline instability
-            break;
-    }
-
-    // ============================
-    // ARMOR-LEVEL REACTIONS
-    // ============================
-    switch (EmotionalArmor)
-    {
-        case ArmorLevel.Low:
-            if (eventDescription.Contains("harsh"))
-                Stress += 10;
-            break;
-
-        case ArmorLevel.Medium:
-            if (eventDescription.Contains("harsh"))
                 Stress += 5;
-            break;
+                break;
 
-        case ArmorLevel.High:
-            if (eventDescription.Contains("harsh"))
-                Stress += 2;
+            case PersonalityType.Empathic:
+                if (eventDescription.Contains("sad"))
+                    Mood -= 5;
 
-            if (eventDescription.Contains("vulnerable"))
-                Comfort -= 10;
-            break;
+                if (eventDescription.Contains("happy"))
+                    Mood += 5;
+                break;
+        }
 
-        case ArmorLevel.Extreme:
-            if (eventDescription.Contains("harsh"))
-                Stress += 1;
+        // ============================
+        // ATTACHMENT-BASED REACTIONS
+        // ============================
+        switch (Attachment)
+        {
+            case AttachmentStyle.Secure:
+                if (eventDescription.Contains("support"))
+                    Comfort += 10;
+                break;
 
-            if (eventDescription.Contains("vulnerable"))
-                Comfort -= 20;
-            break;
+            case AttachmentStyle.Avoidant:
+                if (eventDescription.Contains("cling"))
+                    Stress += 10;
+                break;
+
+            case AttachmentStyle.Anxious:
+                if (eventDescription.Contains("delay"))
+                    Stress += 15;
+                break;
+
+            case AttachmentStyle.Disorganized:
+                Stress += 5; // baseline instability
+                break;
+        }
+
+        // ============================
+        // ARMOR-LEVEL REACTIONS
+        // ============================
+        switch (EmotionalArmor)
+        {
+            case ArmorLevel.Low:
+                if (eventDescription.Contains("harsh"))
+                    Stress += 10;
+                break;
+
+            case ArmorLevel.Medium:
+                if (eventDescription.Contains("harsh"))
+                    Stress += 5;
+                break;
+
+            case ArmorLevel.High:
+                if (eventDescription.Contains("harsh"))
+                    Stress += 2;
+
+                if (eventDescription.Contains("vulnerable"))
+                    Comfort -= 10;
+                break;
+
+            case ArmorLevel.Extreme:
+                if (eventDescription.Contains("harsh"))
+                    Stress += 1;
+
+                if (eventDescription.Contains("vulnerable"))
+                    Comfort -= 20;
+                break;
+        }
+
+        // ============================
+        // MEMORY CREATION
+        // ============================
+        AddMemory($"Event processed: {eventDescription}", 3);
     }
-
-    // ============================
-    // MEMORY CREATION
-    // ============================
-    AddMemory($"Event processed: {eventDescription}", 3);
-}
 
     internal void ApplyAllModifiers()
     {

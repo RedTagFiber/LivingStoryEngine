@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-using LivingStoryEngine.Models;
+﻿using LivingStoryEngine.Models;
+using System.Text.Json;
 
 namespace LivingStoryEngine.Managers;
 
